@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "dsc-asu",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Website for Developer Student Club at Arizona State University",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Ananay Arora <i@ananayarora.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.22",
     "@fortawesome/free-brands-svg-icons": "^5.10.2",
