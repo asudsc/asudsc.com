@@ -1,21 +1,24 @@
 import React from "react"
-import { Link } from "gatsby"
+import bg from "../images/bg.png";
+import logo from "../images/logo.jpg";
+import "../styles/home.css";
+import Helmet from "react-helmet";
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+const Home = () => (
+  <div className={"container"}>
+    <Helmet>
+      <title>Developer Student Club ASU</title>
+    </Helmet>
+    <img src={logo} className="logo"></img>
+    <div className="socials">
+      <a href="https://facebook.com/asudsc" target="_blank" rel="noopener"><FaFacebook /></a>
+      <a href="https://instagram.com/asu.dsc" target="_blank" rel="noopener"><FaInstagram /></a>
+      <a href="https://twitter.com/asudsc" target="_blank" rel="noopener"><FaTwitter /></a>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+    <h1 className={"description"}>Powered by <a href="https://developers.google.com">Google Developers</a></h1>
+    <h1 className={"comingsoon"}>Coming Soon. Stay tuned for updates.</h1>
+  </div>
 )
 
-export default IndexPage
+export default Home
