@@ -1,0 +1,47 @@
+@import "global.scss";
+
+.menu {
+    .dsclogo {
+        width: 50px;
+        position: relative;
+        left: 150px;
+    }
+
+    .logo_symbol {
+        width: 300px;
+        position: relative;
+        left: 150px;
+        top: 22.5px;
+        // opacity: 0;
+    }
+
+    // box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    ul {
+        width: 100%;
+        list-style: none;
+        li {
+            cursor: pointer;
+            display: inline-block;
+            padding: 25px;
+            padding-bottom: 30px;
+            padding-top: 35px;
+            border-bottom: 2px solid rgba(0,0,0,0);
+            transition: all 0.5s;
+            &:hover {
+                border-bottom: 2px solid $blue;
+            }
+        }
+    }
+
+    .hamburger {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .dsclogo {
+        position: relative;
+        left: 40% !important;
+        transform: translate(-50%, 0%);
+    }
+}

@@ -1,0 +1,19 @@
+.events-list {
+    width: 75%;
+    padding: 30px;
+    padding-left: 2.5%;
+    border-top: 2px solid rgba(0,0,0,0.1);
+    margin-top: 60px;
+    margin-left: 10%;
+    h2 {
+        font-size: 20pt;
+        margin-left: 20px;
+        margin-top: 20px;
+        color: #4285f4;
+    }
+    .event-card {
+        margin: 30px;
+        margin-left: 15px;
+        display: inline-block;
+    }
+}

@@ -1,0 +1,30 @@
+.event-card {
+    padding: 30px;
+    border: 3px solid rgba(0,0,0,0.05);
+    // box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #fff;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 20px;
+    .name {
+        font-size: 15pt;
+        color: #4e5869;
+        line-height: 1.5em;
+    }
+    .meta {
+        padding: 5px;
+        margin-top: 10px;
+        i {
+            padding-right: 20px;
+        }
+        .value {
+            margin-left: 15px;
+            position: relative;
+            top: -2px;
+        }
+    }
+}
+
+.event-meta {
+    margin-top: 20px;
+}
