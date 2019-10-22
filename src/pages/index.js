@@ -4,16 +4,18 @@ import logo from "../images/logo.jpg";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import Header from "../components/header";
 import intro_image from "../images/intro_3.jpg";
-import { Grid, Box, NoSsr } from '@material-ui/core';
+import { Grid, Box } from '@material-ui/core';
 import "../styles/home.scss";
 import logo_horizontal from "../images/logo_white.svg";
 import Button from "../components/Button";
 import common from "../components/common";
 import ASUEmail from "../components/ASUEmail";
+import { withSwalInstance } from 'sweetalert2-react';
 import who_are_we_image from '../images/intro.jpeg';
 import user from "../controllers/user";
 import swal from 'sweetalert2';
 import EventList from '../components/events/EventList';
+const SweetAlert = withSwalInstance(swal);
 
 class Home extends React.Component {
     constructor(props) {
@@ -64,29 +66,21 @@ class Home extends React.Component {
             });
         }
 
-        // document.getElementById('email_subscribe').onsubmit = (e) => {
-        //     e.preventDefault();
-        //     this.emailInput.current.checkEmail();
-        //     if (this.state.emailValid) {
-        //         this.signupUser();
-        //     }
-        // }
-
-    }
-
-    handleFormSubmit(e) {
-        e.preventDefault();
-        this.emailInput.current.checkEmail();
-        if (this.state.emailValid) {
-            this.signupUser();
+        document.getElementById('signupbutton').onclick = () => {
+            this.emailInput.current.checkEmail();
+            if (this.state.emailValid) {
+                this.signupUser();
+            }
         }
-    }
 
-    signupUser() {
-        this.emailInput.current.checkEmail();
-        if (this.state.emailValid) {
-            this.signupUser();
+        document.getElementById('email_subscribe').onsubmit = (e) => {
+            e.preventDefault();
+            this.emailInput.current.checkEmail();
+            if (this.state.emailValid) {
+                this.signupUser();
+            }
         }
+
     }
 
     render() {
@@ -112,7 +106,7 @@ class Home extends React.Component {
                                 <br />
                                 <p className={"signup-helper"}>Signup below to get added to our Slack, mailing list and the information session.</p>
                                 <br />
-                                <form id="email_subscribe" onsubmit={this.handleFormSubmit}>
+                                <form id="email_subscribe">
                                     <ASUEmail
                                         ref={this.emailInput}
                                         email={(email) => {
@@ -126,11 +120,9 @@ class Home extends React.Component {
                                             })
                                         }}
                                     />
-                                    <NoSsr>
-                                        <Box pt={2}>
-                                            <Button variant={"contained"} id={"signupbutton"} onsubmit={this.signupUserButton} theme={"blue"}>Sign me up!</Button>
-                                        </Box>
-                                    </NoSsr>
+                                    <Box pt={2}>
+                                        <Button variant={"contained"} id={"signupbutton"} theme={"blue"}>Sign me up!</Button>
+                                    </Box>
                                 </form>
                             </Box>
                         </Grid>

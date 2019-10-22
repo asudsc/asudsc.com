@@ -11,6 +11,10 @@ $blue: #4285f4;
     -webkit-font-smoothing: antialiased;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 .grecaptcha-badge { 
     visibility: hidden;
 }
