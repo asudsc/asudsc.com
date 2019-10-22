@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Grid } from "@material-ui/core";
 import events from "../../controllers/events";
 import Button from "../../components/Button";
-import Header from "../../components/Header";
+import Header from "../../components/header";
 const Loading = require('react-loading-animation');
 
 export default class RSVP extends React.Component {
