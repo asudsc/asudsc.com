@@ -95,6 +95,9 @@ class Home extends React.Component {
                                     <img src={logo_horizontal} className={"logo_horizontal"}></img>
                                     <br />
                                     <b className={"powered_by"}>Powered by Google Developers</b>
+                                    <br />
+                                    <br />
+                                
                                 </div>
                             </div>
                         </div>
@@ -134,14 +137,6 @@ class Home extends React.Component {
                             </Grid>
                             <Grid container xs={12} justify={"center"}>
                                 <p className={"description"}><b>Developer Student Club – Powered by Google Developers – is a program to help students learn how to use Google Technologies to make an impact in their local community, business and university.</b></p>
-                            </Grid>
-                        </div>
-
-                        <div className={"info_section"}>
-                            <div className={"title"}>Meet the core team</div>
-                            <Grid container xs={12} justify={"center"}>
-                                <img src={""}></img>
-                                <p className={"description"}></p>
                             </Grid>
                         </div>
 

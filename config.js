@@ -6,4 +6,4 @@ const prod = {
     api: "https://api.asudsc.com"
 }
 
-module.exports = dev;
+module.exports = prod;

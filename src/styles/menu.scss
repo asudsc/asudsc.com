@@ -7,6 +7,7 @@
     width: 100%;
     color: #000;
     background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
     .dsclogo {
         width: 50px;
         position: relative;
@@ -19,6 +20,10 @@
         left: 150px;
         // top: 15px;
         // opacity: 0;
+    }
+
+    .socials img {
+        width: 21px;
     }
 
     // box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -42,6 +47,14 @@
     .hamburger {
         padding: 20px;
     }
+}
+
+.footer {
+    width: 100%;
+    padding: 30px;
+    background: #333;
+    margin-top: 100px;
+    color: #fff;
 }
 
 @media screen and (max-width: 900px) {

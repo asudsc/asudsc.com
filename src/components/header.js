@@ -55,12 +55,40 @@ export default class Header extends React.Component {
                         </Grid>
                         {!this.state.responsive &&
                             <Grid item xs={4}>
-                                <ul>
+                                {/* <ul>
                                     <li>Home</li>
                                     <li>Events</li>
                                     <li>Meet the team</li>
                                     <li>Contact</li>
-                                </ul>
+                                </ul> */}
+                                <div class="socials">
+                                    <ul>
+                                        <li>
+                                            <a
+                                                target="_blank"
+                                                rel="noopener"
+                                                href="https://instagram.com/asu.dsc">
+                                                <img src="https://i.imgur.com/pZiUQgN.png" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                target="_blank"
+                                                rel="noopener"
+                                                href="https://facebook.com/asudsc">
+                                                <img src="https://i.imgur.com/kN8cpwb.png" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                target="_blank"
+                                                rel="noopener"
+                                                href="https://twitter.com/asudsc">
+                                                <img src="https://i.imgur.com/hVSvJi8.png" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </Grid>
                         }
                     </Grid>
@@ -68,6 +96,10 @@ export default class Header extends React.Component {
                 <div className={"content"}>
                     {this.props.children}
                 </div>
+                <div className={"footer"}>
+                    Copyright &copy; Developer Student Clubs at Arizona State University. Made by <a href="https://ananayarora.com">Ananay Arora</a>
+                </div>
+
             </div>
         )
     }
