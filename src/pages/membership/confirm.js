@@ -77,7 +77,7 @@ export default class Confirm extends React.Component {
                                 <p>You don't need to confirm your membership again! Instead, get started by hopping on to our Slack.</p>
                                 <br /><br />
                                 <center>
-                                    <a href="https://asudsc.slack.com/signup">
+                                    <a href="https://ananay.me/asudsc-slack">
                                         <Button variant={"contained"} theme={"blue"} id={"slackbutton"}>
                                             <FaSlackHash />{'\u00A0\u00A0\u00A0'}Join the Slack!
                                         </Button>
