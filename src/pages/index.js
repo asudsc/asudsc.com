@@ -3,14 +3,15 @@ import bg from "../images/bg.png";
 import logo from "../images/logo.jpg";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import Header from "../components/header";
-import intro_image from "../images/intro.jpeg";
+import intro_image from "../images/intro_3.jpg";
 import { Grid, Box } from '@material-ui/core';
 import "../styles/home.scss";
-import logo_horizontal from "../images/logo.svg";
+import logo_horizontal from "../images/logo_white.svg";
 import Button from "../components/Button";
 import common from "../components/common";
 import ASUEmail from "../components/ASUEmail";
 import { withSwalInstance } from 'sweetalert2-react';
+import who_are_we_image from '../images/intro.jpeg';
 import user from "../controllers/user";
 import swal from 'sweetalert2';
 import EventList from '../components/events/EventList';
@@ -84,23 +85,20 @@ class Home extends React.Component {
 
     render() {
         return (
-            <Header>
+            <Header showLogo={true}>
                 <div className="intro">
                     <Grid container justify={"center"} spacing={this.state.responsive ? 12 : 10}>
-                        <Grid item justify={"center"} xs={this.state.responsive ? 0 : 5}>
-                            {this.state.responsive &&
-                                <Grid container justify={"center"}>
-                                    <img src={logo_horizontal} class={"logo-horizontal"} />
-                                </Grid>
-                            }
+                        <div className={"intro_section"}>
+                            <div className={"background"} style={{ 'background-image': `url(${intro_image})` }}>
+                                <div className={"overlay"}></div>
+                                <div className={"intro_image"}>
+                                    <img src={logo_horizontal} className={"logo_horizontal"}></img>
+                                    <br />
+                                    <b className={"powered_by"}>Powered by Google Developers</b>
+                                </div>
+                            </div>
+                        </div>
 
-                            {!this.state.responsive &&
-                                <img src={logo_horizontal} class={"logo-horizontal"} />
-                            }
-                            <p className="description">
-                                <b>Developer Student Club ASU</b> – powered by <b>Google Developers</b> – is a program to help students learn how to use Google Technologies to make an impact in their local community, business and university.
-                            </p>
-                        </Grid>
                         <Grid item xs={this.state.responsive ? 10 : 5}>
                             <br />
                             <Box pt={1}>
@@ -123,18 +121,46 @@ class Home extends React.Component {
                                         }}
                                     />
                                     <Box pt={2}>
-                                        <Button variant={"contained"} id={"signupbutton"}>Sign me up!</Button>
+                                        <Button variant={"contained"} id={"signupbutton"} theme={"blue"}>Sign me up!</Button>
                                     </Box>
                                 </form>
                             </Box>
                         </Grid>
+
+                        <div className={"info_section"}>
+                            <div className={"title"}>Who are we?</div>
+                            <Grid container xs={12} justify={"center"}>
+                                <img src={who_are_we_image} className={"who_are_we_image"} />
+                            </Grid>
+                            <Grid container xs={12} justify={"center"}>
+                                <p className={"description"}><b>Developer Student Club – Powered by Google Developers – is a program to help students learn how to use Google Technologies to make an impact in their local community, business and university.</b></p>
+                            </Grid>
+                        </div>
+
+                        <div className={"info_section"}>
+                            <div className={"title"}>Meet the core team</div>
+                            <Grid container xs={12} justify={"center"}>
+                                <img src={""}></img>
+                                <p className={"description"}></p>
+                            </Grid>
+                        </div>
+
+                        {/* <Grid item justify={"center"} xs={this.state.responsive ? 0 : 5}>
+                            {this.state.responsive &&
+                                <Grid container justify={"center"}>
+                                    <img src={logo_horizontal} class={"logo-horizontal"} />
+                                </Grid>
+                            }
+
+                            {!this.state.responsive &&
+                                <img src={logo_horizontal} class={"logo-horizontal"} />
+                            }
+                            <p className="description">
+                                <b>Developer Student Club ASU</b> – powered by <b>Google Developers</b> – is a program to help students learn how to use Google Technologies to make an impact in their local community, business and university.
+                            </p>
+                        </Grid> */}
                     </Grid>
                 </div>
-
-                {/* <div className="events">
-                    <EventList />
-                </div> */}
-
             </Header>
         );
     }

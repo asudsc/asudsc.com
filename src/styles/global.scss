@@ -2,7 +2,7 @@
 
 $fonts: "Google Sans", "Helvetica Neue";
 $secondary: "Roboto";
-$blue: #4d90fe;
+$blue: #4285f4;
 
 * {
     margin: 0;
@@ -13,4 +13,9 @@ $blue: #4d90fe;
 
 .grecaptcha-badge { 
     visibility: hidden;
+}
+
+a {
+    color: $blue;
+    text-decoration: none;
 }

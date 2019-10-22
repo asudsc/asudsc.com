@@ -25,21 +25,49 @@ const MyButton = styled(TheButton)({
     padding: '0 30px',
 });
 
+const MyButtonBlue = styled(TheButton)({
+    background: 'linear-gradient(30deg, #1b40de, #2cb4ed)',
+    border: 0,
+    borderRadius: 3,
+    boxShadow: '0 3px 5px 2px rgba(44, 180, 237, .1)',
+    color: 'white',
+    height: 48,
+    padding: '0 30px',
+});
+
 class Button extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            'theme': props.theme || "blue"
+            'theme': props.theme || "red"
         };
     }
 
     render() {
         return (
-            <MyButton
-                {...this.props}
-            >
-                {this.props.children}
-            </MyButton>
+            <div>
+                {
+                    (this.state.theme == "red") && (
+
+                        <MyButton
+                            {...this.props}
+                        >
+                            {this.props.children}
+                        </MyButton>
+                    )
+                }
+
+                {
+                    (this.state.theme == "blue") && (
+                        <MyButtonBlue
+                            {...this.props}
+                        >
+                            {this.props.children}
+                        </MyButtonBlue>
+                    )
+                }
+
+            </div>
         );
     }
 }

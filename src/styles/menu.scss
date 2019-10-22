@@ -1,6 +1,12 @@
 @import "global.scss";
 
 .menu {
+    position: fixed;
+    top: 0;
+    z-index: +99999;
+    width: 100%;
+    color: #000;
+    background: #fff;
     .dsclogo {
         width: 50px;
         position: relative;
@@ -8,10 +14,10 @@
     }
 
     .logo_symbol {
-        width: 300px;
+        width: 40px;
         position: relative;
         left: 150px;
-        top: 22.5px;
+        // top: 15px;
         // opacity: 0;
     }
 

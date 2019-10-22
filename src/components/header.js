@@ -50,7 +50,7 @@ export default class Header extends React.Component {
                         <Grid item xs={this.state.responsive ? 10 : 8}>
                             {/* <img src={dsclogo} className={"dsclogo"}></img> */}
                             {this.props.showLogo == true &&
-                                <img src={logo_horizontal} className={"logo_symbol"}></img>
+                                <img src={dsclogo} className={"logo_symbol"}></img>
                             }
                         </Grid>
                         {!this.state.responsive &&
