@@ -34,7 +34,7 @@ export default class Header extends React.Component {
                 <Helmet>
                     <title>{this.props.title}</title>
                 </Helmet>
-                <div className={"menu"}>
+                {/* <div className={"menu"}>
                     <Grid container
                         direction="row"
                         justify="flex-start"
@@ -48,51 +48,49 @@ export default class Header extends React.Component {
                             </Grid>
                         }
                         <Grid item xs={this.state.responsive ? 10 : 8}>
-                            {/* <img src={dsclogo} className={"dsclogo"}></img> */}
+                             <img src={dsclogo} className={"dsclogo"}></img>
                             {this.props.showLogo == true &&
                                 <img src={dsclogo} className={"logo_symbol"}></img>
                             }
                         </Grid>
-                        {!this.state.responsive &&
-                            <Grid item xs={4}>
-                                {/* <ul>
+                        <Grid item xs={4}>
+                            <ul>
                                     <li>Home</li>
                                     <li>Events</li>
                                     <li>Meet the team</li>
                                     <li>Contact</li>
-                                </ul> */}
-                                <div class="socials">
-                                    <ul>
-                                        <li>
-                                            <a
-                                                target="_blank"
-                                                rel="noopener"
-                                                href="https://instagram.com/asu.dsc">
-                                                <img src="https://i.imgur.com/pZiUQgN.png" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                target="_blank"
-                                                rel="noopener"
-                                                href="https://facebook.com/asudsc">
-                                                <img src="https://i.imgur.com/kN8cpwb.png" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                target="_blank"
-                                                rel="noopener"
-                                                href="https://twitter.com/asudsc">
-                                                <img src="https://i.imgur.com/hVSvJi8.png" />
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </Grid>
-                        }
+                                </ul>
+                            <div class="socials">
+                                <ul>
+                                    <li>
+                                        <a
+                                            target="_blank"
+                                            rel="noopener"
+                                            href="https://instagram.com/asu.dsc">
+                                            <img src="https://i.imgur.com/pZiUQgN.png" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            target="_blank"
+                                            rel="noopener"
+                                            href="https://facebook.com/asudsc">
+                                            <img src="https://i.imgur.com/kN8cpwb.png" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            target="_blank"
+                                            rel="noopener"
+                                            href="https://twitter.com/asudsc">
+                                            <img src="https://i.imgur.com/hVSvJi8.png" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </Grid>
                     </Grid>
-                </div>
+                </div> */}
                 <div className={"content"}>
                     {this.props.children}
                 </div>

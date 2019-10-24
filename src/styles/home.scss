@@ -22,6 +22,7 @@ p {
 }
 
 .intro_section {
+    height: 100px;
     width: 100%;
 }
 
@@ -29,7 +30,7 @@ p {
     position: relative;
     background-size: cover !important;
     background-position: center;
-    height: 400px;
+    height: 600px;
     display:  block;
     width: 100%;
 }
@@ -38,6 +39,7 @@ p {
     // background: linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.7) 80%);
     background: rgba(0,0,0,0.75);
     position: absolute;
+    z-index: +5;
     top: 0;
     left: 0;
     width: 100%;
@@ -45,32 +47,47 @@ p {
 }
 
 .intro_image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    position: relative;
+    z-index: +1000;
+    padding-top: 150px;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%,-50%);
 }
 
 .logo_horizontal {
-    width: 400px;
+    // background: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    width: 800px;
 }
 
 .powered_by {
-    position: relative;
-    top: 50px;
-    left: 75px;
-    font-size: 15pt;
+    // position: relative;
+    // top: 50px;
+    // left: 35.5px;
+    font-size: 25pt;
     color: #fff;
     text-align: center;
 }
 
+.desc {
+    width: 50%;
+    font-size: 20pt;
+    color: #fff;
+}
+
+.white {
+    color: #fff;
+}
+
 .intro_section {
-    height: 400px;
+    height: 600px;
     overflow: hidden;
 }
 
 .intro {
-    margin-top: 100px;
 
     .title {
         font-size: 22pt;
@@ -97,10 +114,7 @@ p {
 }
 
 .info_section {
-    margin-top: 30px;
     padding-top: 25px;
-    border-top: 2px solid #eee;
-
     width: 100%;
     .title {
         position: relative;
@@ -111,6 +125,7 @@ p {
         width: 600px;
         height: 400px;
         margin-top: 20px;
+        border-radius: 10px;
     }
 
 }
@@ -147,7 +162,7 @@ p {
     }
 
     .logo-horizontal {
-        width: 400px !important;
+        width: 200px !important;
     }
 
 

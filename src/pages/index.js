@@ -66,20 +66,20 @@ class Home extends React.Component {
             });
         }
 
-        document.getElementById('signupbutton').onclick = () => {
-            this.emailInput.current.checkEmail();
-            if (this.state.emailValid) {
-                this.signupUser();
-            }
-        }
+        // document.getElementById('signupbutton').onclick = () => {
+        //     this.emailInput.current.checkEmail();
+        //     if (this.state.emailValid) {
+        //         this.signupUser();
+        //     }
+        // }
 
-        document.getElementById('email_subscribe').onsubmit = (e) => {
-            e.preventDefault();
-            this.emailInput.current.checkEmail();
-            if (this.state.emailValid) {
-                this.signupUser();
-            }
-        }
+        // document.getElementById('email_subscribe').onsubmit = (e) => {
+        //     e.preventDefault();
+        //     this.emailInput.current.checkEmail();
+        //     if (this.state.emailValid) {
+        //         this.signupUser();
+        //     }
+        // }
 
     }
 
@@ -92,19 +92,27 @@ class Home extends React.Component {
                             <div className={"background"} style={{ 'background-image': `url(${intro_image})` }}>
                                 <div className={"overlay"}></div>
                                 <div className={"intro_image"}>
-                                    <img src={logo_horizontal} className={"logo_horizontal"}></img>
-                                    <br />
-                                    <b className={"powered_by"}>Powered by Google Developers</b>
-                                    <br />
-                                    <br />
-                                
+                                    <center>
+                                        <img src={logo_horizontal} className={"logo_horizontal"}></img>
+                                        <br />
+                                        <br />
+                                        <b className={"powered_by"}>Powered by Google Developers</b>
+                                    </center>
                                 </div>
                             </div>
                         </div>
 
+                        <div className={"info_section"}>
+                            <Grid container xs={12} justify={"center"}>
+                                <p className={"description"}><b>Developer Student Club ASU is a club to help students learn how to use Google Technologies for Computer Science, Software Engineering and Artificial Intelligence to make an impact in their local community, business and university.</b></p>
+                                <br />
+                                <br />
+                            </Grid>
+                        </div>
+
                         <Grid item xs={this.state.responsive ? 10 : 5}>
                             <br />
-                            <Box pt={1}>
+                            {/* <Box pt={1}>
                                 <h2 class="signup-title">Join the club and come to our info session!  🍕</h2>
                                 <br />
                                 <p className={"signup-helper"}>Signup below to get added to our Slack, mailing list and the information session.</p>
@@ -127,18 +135,24 @@ class Home extends React.Component {
                                         <Button variant={"contained"} id={"signupbutton"} theme={"blue"}>Sign me up!</Button>
                                     </Box>
                                 </form>
-                            </Box>
+                            </Box> */}
+                            <center>
+                                <h2 class={"signup-title"}>Get involved with DSC</h2>
+                                <br />
+                                <br />
+                                <center>
+                                    <b>No Previous Coding Skills Required!</b>
+                                </center>
+                                <br />
+                                <a target={"_blank"} ref="noopener" href={"https://asu.campuslabs.com/engage/organization/dsc"}>
+                                    <Button variant={"contained"} id={"signupbutton"} theme={"red"}>Join the organization on SunDevilSync</Button>
+                                </a>
+                                <br />
+                                <a target={"_blank"} ref="noopener" href={"https://ananay.me/asudsc-slack"}>
+                                    <Button variant={"contained"} id={"signupbutton"} theme={"blue"}>Join the Slack Workspace</Button>
+                                </a>
+                            </center>
                         </Grid>
-
-                        <div className={"info_section"}>
-                            <div className={"title"}>Who are we?</div>
-                            <Grid container xs={12} justify={"center"}>
-                                <img src={who_are_we_image} className={"who_are_we_image"} />
-                            </Grid>
-                            <Grid container xs={12} justify={"center"}>
-                                <p className={"description"}><b>Developer Student Club – Powered by Google Developers – is a program to help students learn how to use Google Technologies to make an impact in their local community, business and university.</b></p>
-                            </Grid>
-                        </div>
 
                         {/* <Grid item justify={"center"} xs={this.state.responsive ? 0 : 5}>
                             {this.state.responsive &&
