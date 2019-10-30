@@ -1,7 +1,7 @@
 import React from "react"
 import bg from "../images/bg.png";
 import logo from "../images/logo.jpg";
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import Header from "../components/header";
 import intro_image from "../images/intro_3.jpg";
 import { Grid, Box } from '@material-ui/core';
@@ -43,7 +43,16 @@ export default class Home extends React.Component {
                         </div>
                     </div>
                     <div className={"section"}>
-                        <div style={{"display": "inline-block", "marginLeft": "10%"}}>
+                        <br />
+                        <center>
+                            <div className={"socials"}>
+                                <FaFacebookF />
+                                <FaInstagram />
+                                <FaTwitter />
+                            </div>
+                        </center>
+                        <br />
+                        <div style={{ "display": "inline-block", "marginLeft": "10%" }}>
                             <h1 className={"title"}>Get Involved with DSC</h1>
                             <p className={"description"}>Join the club on SunDevilSync and come for our Information Session.<br /><br /> Yes, we'll have free pizza 🍕.</p>
                             <br />
@@ -65,7 +74,7 @@ export default class Home extends React.Component {
                         </div>
                     </div>
                 </Header>
-            </div>
+            </div >
         )
     }
 }

@@ -92,6 +92,11 @@
 @media screen and (max-width: 600px) {
     .intro {
         padding: 70px;
+        border-bottom: 1px solid rgba(0,0,0,0.09);
+    }
+
+    .socials {
+        padding-bottom: 10px;
     }
     .intro_text {
         width: 100% !important;
@@ -136,4 +141,13 @@
         margin-left: -2.5%;
     }
 
+}
+
+.socials {
+    font-size: 30pt;
+    svg {
+        padding: 30px;
+        padding-bottom: 0px;
+    }
+    display: inline-block;
 }
