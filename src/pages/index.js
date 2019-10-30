@@ -46,13 +46,13 @@ export default class Home extends React.Component {
                         <br />
                         <center>
                             <div className={"socials"}>
-                                <a href={"https://facebook.com/asudsc"}>
+                                <a href={"https://facebook.com/asudsc"} target="_blank">
                                     <FaFacebookF />
                                 </a>
-                                <a href={"https://instagram.com/asu.dsc"}>
+                                <a href={"https://instagram.com/asu.dsc"} target="_blank">
                                     <FaInstagram />
                                 </a>
-                                <a href={"https://twitter.com/asudsc"}>
+                                <a href={"https://twitter.com/asudsc"} target="_blank">
                                     <FaTwitter />
                                 </a>
                             </div>
@@ -64,8 +64,12 @@ export default class Home extends React.Component {
                             <br />
                             <br />
                             <div className={"get_involved_buttons"}>
-                                <Button theme={"asu"}>Join us on SunDevilSync</Button>
-                                <Button theme={"blue"}>Join the Slack</Button>
+                                <a href="https://asu.campuslabs.com/engage/organization/dsc" target="_blank">
+                                    <Button theme={"asu"}>Join us on SunDevilSync</Button>
+                                </a>
+                                <a href="https://ananay.me/asudsc-slack" target="_blank">
+                                    <Button theme={"blue"}>Join the Slack</Button>
+                                </a>
                             </div>
                         </div>
                         <div className={"info-session"}>
