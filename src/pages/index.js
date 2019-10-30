@@ -46,9 +46,15 @@ export default class Home extends React.Component {
                         <br />
                         <center>
                             <div className={"socials"}>
-                                <FaFacebookF />
-                                <FaInstagram />
-                                <FaTwitter />
+                                <a href={"https://facebook.com/asudsc"}>
+                                    <FaFacebookF />
+                                </a>
+                                <a href={"https://instagram.com/asu.dsc"}>
+                                    <FaInstagram />
+                                </a>
+                                <a href={"https://twitter.com/asudsc"}>
+                                    <FaTwitter />
+                                </a>
                             </div>
                         </center>
                         <br />
