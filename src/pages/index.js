@@ -78,8 +78,7 @@ export default class Home extends React.Component {
                                 start={1574127000}
                                 end={1574130600}
                                 location={"Pima Auditorium MU 230"}
-                                rsvp={"https://asu.campuslabs.com/engage/event/5080027"}
-                                gcal={"https://asu.campuslabs.com/engage/event/5080027/googlepublish"}
+                                rsvp={"https://www.eventbrite.com/e/info-session-developer-student-club-at-arizona-state-university-tickets-79307299267"}
                             ></EventCard>
                         </div>
                     </div>
