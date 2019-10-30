@@ -6,6 +6,7 @@ import logo_horizontal from "../images/logo.svg";
 import { FaBars } from "react-icons/fa";
 import common from "./common.js";
 import "../styles/menu.scss";
+import { slide as Menu } from 'react-burger-menu'
 import { Grid } from '@material-ui/core';
 
 export default class Header extends React.Component {
@@ -34,6 +35,9 @@ export default class Header extends React.Component {
                 <Helmet>
                     <title>{this.props.title}</title>
                 </Helmet>
+                <div className={"header_logo"}>
+                    <img src={logo_horizontal}></img>
+                </div>
                 {/* <div className={"menu"}>
                     <Grid container
                         direction="row"
@@ -95,9 +99,10 @@ export default class Header extends React.Component {
                     {this.props.children}
                 </div>
                 <div className={"footer"}>
-                    Copyright &copy; Developer Student Clubs at Arizona State University. Made by <a href="https://ananayarora.com">Ananay Arora</a>
+                    <center>
+                        Copyright &copy; Developer Student Club at Arizona State University. Powered by Google Developers. Made by <a href="https://ananayarora.com">Ananay Arora</a>
+                    </center>
                 </div>
-
             </div>
         )
     }

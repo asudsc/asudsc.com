@@ -3,7 +3,7 @@ import { FiMapPin, FiClock, FiCalendar } from "react-icons/fi";
 import moment from 'moment';
 import "../../styles/components/EventCard.scss";
 import { Grid, Box } from '@material-ui/core';
-import Button from '@material-ui/core/Button';
+import Button from '../../components/Button';
 
 export default class EventCard extends React.Component {
 
@@ -56,20 +56,13 @@ export default class EventCard extends React.Component {
                 </div>
                 <Grid container justify={"center"}>
                     <Box pt={4}>
-                        <Button
-                            variant={"outlined"}
-                            color={"primary"}
-                        >
-                            RSVP
-                        </Button>
-                    </Box>
-                    <Box pl={4} pt={4}>
-                        <Button
-                            variant={"outlined"}
-                            color={"primary"}
-                        >
-                            Directions
-                        </Button>
+                        <a href={this.props.rsvp}>
+                            <Button
+                                theme={"blue"}
+                            >
+                                RSVP
+                            </Button>
+                        </a>
                     </Box>
                 </Grid>
             </div>

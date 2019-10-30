@@ -1,0 +1,170 @@
+@import "global.scss";
+
+* {
+    font-weight: 500;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    line-height: 1.5em;
+    font-weight: 500;
+    font-size: 12pt;
+}
+
+.signup-helper {
+    font-size: 12pt;
+    color: #333;
+    line-height: 30px;
+}
+
+.background {
+    position: relative;
+    background-size: cover !important;
+    background-position: center;
+    height: 600px;
+    display:  block;
+    width: 50%;
+}
+
+.overlay {
+    // background: linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.7) 80%);
+    background: rgba(0,0,0,0.75);
+    position: absolute;
+    z-index: +5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.intro_image {
+    position: relative;
+    z-index: +1000;
+    padding-top: 150px;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%,-50%);
+}
+
+.logo_horizontal {
+    // background: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    width: 65%;
+}
+
+.powered_by {
+    // position: relative;
+    // top: 50px;
+    // left: 35.5px;
+    font-size: 18pt;
+    color: #606060;
+    text-align: center;
+}
+
+.desc {
+    width: 50%;
+    font-size: 20pt;
+    color: #fff;
+}
+
+.white {
+    color: #fff;
+}
+
+.intro_section {
+    height: 600px;
+    overflow: hidden;
+}
+
+.intro {
+
+    .title {
+        font-size: 22pt;
+    }
+
+    .description {
+        margin-top: 25px;
+        font-family: $fonts;
+        line-height: 40px;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        color: #202124;
+        font-size: 15pt;
+        font-weight: 400;
+        letter-spacing: -.03125rem;
+        line-height: 3rem;
+        width: 37.5%;
+    }
+
+    .logo-horizontal {
+        width: 100px;
+        margin-top: 30px;
+    }
+}
+
+.info_section {
+    padding-top: 25px;
+    width: 100%;
+    .title {
+        position: relative;
+        left: 31%;
+    }
+
+    .who_are_we_image {
+        width: 600px;
+        height: 400px;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+}
+
+.mid-info {
+    padding-left: 20px;
+    color: #fff;
+    text-align: center;
+    background: $blue;
+    padding: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    .intro {
+        margin-top: 10px;
+        .intro_image {
+            padding: 20px;
+            // width: 300px;
+        }
+        .description {
+            font-family: $fonts;
+            font-weight: 400;
+            font-size: 12pt;
+            line-height: 33px;
+            // text-align: center;
+            margin-left: 9%;
+            margin-right: 5%;
+        }
+    }
+
+    .signup-title {
+        font-size: 14pt;
+        text-align: center;
+    }
+
+    .logo-horizontal {
+        width: 200px !important;
+    }
+
+
+    .info_section {
+        .description {
+            width: 100%;
+        }
+    }
+
+}

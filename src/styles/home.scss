@@ -1,175 +1,139 @@
-@import "global.scss";
-
-* {
-    font-weight: 500;
-}
-
-html, body {
-    width: 100%;
-    height: 100%;
-}
-
-p {
-    line-height: 1.5em;
-    font-weight: 500;
-    font-size: 12pt;
-}
-
-.signup-helper {
-    font-size: 12pt;
-    color: #333;
-    line-height: 30px;
-}
-
-.intro_section {
-    height: 100px;
-    width: 100%;
-}
-
-.background {
-    position: relative;
-    background-size: cover !important;
-    background-position: center;
-    height: 600px;
-    display:  block;
-    width: 100%;
-}
-
-.overlay {
-    // background: linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.7) 80%);
-    background: rgba(0,0,0,0.75);
-    position: absolute;
-    z-index: +5;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.intro_image {
-    position: relative;
-    z-index: +1000;
-    padding-top: 150px;
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%,-50%);
-}
-
-.logo_horizontal {
-    // background: #fff;
-    padding: 40px;
-    border-radius: 5px;
-    width: 800px;
-}
-
-.powered_by {
-    // position: relative;
-    // top: 50px;
-    // left: 35.5px;
-    font-size: 25pt;
-    color: #fff;
-    text-align: center;
-}
-
-.desc {
-    width: 50%;
-    font-size: 20pt;
-    color: #fff;
-}
-
-.white {
-    color: #fff;
-}
-
-.intro_section {
-    height: 600px;
-    overflow: hidden;
+.g_logo {
+    width: 200px;
 }
 
 .intro {
-
-    .title {
-        font-size: 22pt;
-    }
-
-    .description {
-        margin-top: 25px;
-        font-family: $fonts;
-        line-height: 40px;
+    overflow: hidden;
+    position: relative;
+    .tagline {
+        font-size: 30pt;
         font-weight: 400;
-        -webkit-font-smoothing: antialiased;
-        color: #202124;
-        font-size: 15pt;
-        font-weight: 400;
-        letter-spacing: -.03125rem;
-        line-height: 3rem;
-        width: 37.5%;
     }
 
-    .logo-horizontal {
-        width: 100px;
-        margin-top: 30px;
-    }
-}
 
-.info_section {
-    padding-top: 25px;
-    width: 100%;
-    .title {
+    .g_logo {
+        width: 250px;
+    }
+
+    .intro_stuff {
+        width: 100%;
+        display: inline-block;
         position: relative;
-        left: 31%;
+        z-index: +100;
     }
 
-    .who_are_we_image {
-        width: 600px;
-        height: 400px;
-        margin-top: 20px;
-        border-radius: 10px;
+    .grid {
+        width: 100% !important;
+        position: absolute;
+        top: 0;
+        left: 0px;
     }
 
-}
-
-.mid-info {
-    padding-left: 20px;
-    color: #fff;
-    text-align: center;
-    background: $blue;
-    padding: 30px;
-}
-
-@media screen and (max-width: 800px) {
-    .intro {
-        margin-top: 10px;
-        .intro_image {
-            padding: 20px;
-            // width: 300px;
-        }
-        .description {
-            font-family: $fonts;
-            font-weight: 400;
-            font-size: 12pt;
-            line-height: 33px;
-            // text-align: center;
-            margin-left: 9%;
-            margin-right: 5%;
-        }
-    }
-
-    .signup-title {
-        font-size: 14pt;
-        text-align: center;
-    }
-
-    .logo-horizontal {
-        width: 200px !important;
-    }
-
-
-    .info_section {
-        .description {
+    .intro_text {
+        padding: 30px;
+        width: 50%;
+        display: inline-block;
+        .intro_text_wrapper {
+            background: #fff;
+            padding: 30px;
             width: 100%;
+            position: absolute;
+            top: 40%;
+            left: 105%;
+            transform: translate(-50%,-50%);
         }
+    }
+
+    .intro_image {
+        width: 45%;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    .intro_banner_bg {
+        width: 100%;
+    }
+
+}
+
+.section {
+    padding: 5%;
+    padding-top: 0%;
+    .title {
+        font-size: 24pt;
+        font-weight: 100;
+        border-bottom: 4px solid #4d90fe;
+        display: inline;
+        padding-bottom: 10px;
+    }
+    .description {
+        margin-top: 30px;
+        font-size: 13pt;
+        font-weight: 500;
+    }
+    .pic {
+        width: 100px;
+    }
+}
+
+.get_involved_buttons {
+    div {
+        padding-right: 30px;
+        display: inline-block;
+    }
+}
+
+.info-session {
+    margin-top: 50px;
+    display: inline-block;
+    margin-left: 10%;
+}
+
+@media screen and (max-width: 600px) {
+    .intro {
+        padding: 70px;
+    }
+    .intro_text {
+        width: 100% !important;
+        .intro_text_wrapper {
+            position: absolute !important;
+            top: 50% !important;
+            left: 40% !important;
+            transform: translate(-30%,-50%) !important;
+            .tagline {
+                font-size: 20pt;
+            }
+            .g_logo {
+                width: 250px;
+            }
+        }
+    }
+    .intro_stuff {
+        display: none !important;
+    }
+
+    .section {
+        .title {
+            font-size: 17pt;
+        }
+        .description {
+            font-size: 12pt;
+            font-weight: 400;
+            line-height: 1.8em;
+            width: 90%;
+        }
+    }
+
+    .get_involved_buttons {
+        margin-top: 0px !important;
+        div {
+            display: block;
+            margin-top: 30px;
+        }
+    }
+
+    .info-session {
+        margin-left: -2.5%;
     }
 
 }
