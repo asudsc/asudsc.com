@@ -49,7 +49,7 @@ export default class Home extends React.Component {
                                 <h2>The info session is here (ft. Free Pizza 🍕).</h2>
                                 <br />
                                 <div className={"deets"}>
-                                    <h3><FiCalendar />&nbsp;&nbsp;Monday, 29th October, 2019</h3>
+                                    <h3><FiCalendar />&nbsp;&nbsp;Monday, 18th November, 2019</h3>
                                     <h3><FiClock />&nbsp;&nbsp;6:30 PM - 7:30 PM</h3>
                                     <h3><FiMapPin />&nbsp;&nbsp;Memorial Union Room 230</h3>
                                     <br />

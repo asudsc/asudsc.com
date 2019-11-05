@@ -32,7 +32,7 @@
     "react-dom": "^16.9.0",
     "react-google-recaptcha": "^2.0.1",
     "react-helmet": "^5.2.1",
-    "react-icons": "^3.7.0",
+    "react-icons": "^3.8.0",
     "react-loading-animation": "^1.4.0",
     "sweetalert2": "^8.18.0",
     "sweetalert2-react": "^0.8.3"
