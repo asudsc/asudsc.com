@@ -113,6 +113,17 @@ export default class Home extends React.Component {
                     <br />
                     <div className={"section"}>
                         <center>
+                            <h1 className={"title"}>What is Developer Student Club?</h1>
+                            <p className={`description about`}>Developer Student Clubs are university based community groups for students interested in Google developer technologies. Students from all undergraduate or graduate programs with an interest in growing as a developer are welcome. By joining a DSC, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community. <br /> <br /> Developer Student Club at Arizona State University is a chapter of Developer Student Club at ASU.</p>
+                        </center>
+                    </div>
+                    <br />
+                    <br />
+                    <div class={"line"}></div>
+                    <br />
+                    <br />
+                    <div className={"section"}>
+                        <center>
                             <h1 className={"title"}>Meet the team</h1>
                             <div className={"members"}>
                                 <div className={"member"}>

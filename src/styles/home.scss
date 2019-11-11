@@ -140,6 +140,15 @@
     }
 }
 
+.about {
+    max-width: 60%;
+    letter-spacing: -.2px;
+    line-height: 1.8em;
+    text-align: justify;
+    font-weight: 400 !important;
+    font-size: 15pt !important;
+}
+
 
 @media screen and (max-width: 600px) {
     .intro {
