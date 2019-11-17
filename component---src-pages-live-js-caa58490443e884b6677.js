@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{532:function(t,n,r){"use strict";r.r(n),r.d(n,"default",(function(){return p}));var e=r(0),o=r.n(e);var p=function(t){var n,r;function e(n){return t.call(this,n)||this}return r=t,(n=e).prototype=Object.create(r.prototype),n.prototype.constructor=n,n.__proto__=r,e.prototype.render=function(){return o.a.createElement("div",null,"Livestream")},e}(o.a.Component)}}]);
+//# sourceMappingURL=component---src-pages-live-js-caa58490443e884b6677.js.map
