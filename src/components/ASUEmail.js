@@ -16,28 +16,34 @@ class ASUEmail extends React.Component {
         super(props);
         // Generate a random string because ids need to be unique.
         this.state = {
-            'random': crypto.randomBytes(5)
+            'random': crypto.randomBytes(5),
+            'helpertext': ''
         }
+        this.email = "";
     }
 
     checkEmail() {
-        if (!document.getElementById('asuemail-' + this.state.random).value.match("^[a-zA-Z0-9_.+-]+@(?:(?:[a-zA-Z0-9-]+\.)?[a-zA-Z]+\.)?asu\.edu")) {
-            document.getElementById('email-helper-text-' + this.state.random).innerHTML = "Error! Please use your @asu.edu email.";
+        if (!String(this.email).match("^[a-zA-Z0-9_.+-]+@(?:(?:[a-zA-Z0-9-]+\.)?[a-zA-Z]+\.)?asu\.edu")) {
+            // document.getElementById('email-helper-text-' + this.state.random).innerHTML = "Error! Please use your @asu.edu email.";
             this.setState({
-                'emailError': true
+                'emailError': true,
+                'helpertext': "Error! Please use your @asu.edu email."
             });
-            // Activate realtime checking if they messed up the first time
-            document.getElementById('asuemail-' + this.state.random).oninput = () => {
-                this.checkEmail();
-            }
-            return false;
+            // return false;
+            // console.log(this.email);
         } else {
-            this.props.email(document.getElementById('asuemail-' + this.state.random).value);
-            this.props.valid(true);
+            // console.log("COOL: " + this.email);
             this.setState({
-                'emailError': false
+                emailError: false,
+                helpertext: "☑️ Looks good! Go ahead and sign up!"
             });
-            document.getElementById('email-helper-text-' + this.state.random).innerHTML = "☑️ Looks good! Go ahead and sign up!";
+            this.props.email(this.email);
+            // this.props.email(document.getElementById('asuemail-' + this.state.random).value);
+            // this.props.valid(true);
+            // this.setState({
+            //     'emailError': false
+            // });
+            // document.getElementById('email-helper-text-' + this.state.random).innerHTML = "☑️ Looks good! Go ahead and sign up!";
             return true;
         }
     }
@@ -55,12 +61,10 @@ class ASUEmail extends React.Component {
                         variant="outlined"
                         color="white"
                         required
-                        onChange={() => {
-                            this.props.email(document.getElementById('asuemail-' + this.state.random).value)
-                        }}
+                        onChange={(e) => {this.email = e.target.value; this.checkEmail()}}
                         aria-describedby={"email-helper-text-" + this.state.random}
                     />
-                    <FormHelperText id={"email-helper-text-" + this.state.random}> </FormHelperText>
+                    <FormHelperText id={"email-helper-text-" + this.state.random}>{this.state.helpertext}</FormHelperText>
                 </div>
             </FormControl>
         )

@@ -58,20 +58,20 @@ export default class Home extends React.Component {
         user.signup(this.state.email).then((result) => {
             if (result.success == true) {
                 Swal.fire({
-                    icon: "success",
+                    type: "success",
                     title: "Success",
                     text: `Thank you for signing up, ${result.firstName}`
                 });
             } else {
                 Swal.fire({
-                    icon: "error",
+                    type: "error",
                     title: "Error",
                     text: result.error
                 });
             }
         }).catch((err) => {
             Swal.fire({
-                icon: "error",
+                type: "error",
                 type: "Error",
                 text: err.toString()
             })
