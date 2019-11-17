@@ -16,30 +16,131 @@ import user from "../controllers/user";
 import EventList from '../components/events/EventList';
 import EventCard from "../components/events/EventCard";
 import google_developers_logo from '../images/google_developers.png';
+import google_developers_logo_white from '../images/google_developers_white.png';
 import intro_banner_bg from '../images/intro_banner_bg.jpg';
 import grid from '../images/grid.svg';
 import get_involved_pic from "../images/get_involved.png";
 import { FiMapPin, FiClock, FiCalendar } from "react-icons/fi";
 import pic_ananay from "../images/members/ananay.jpg";
+import pic_andrew from "../images/members/andrew.jpg";
 import pic_randy from "../images/members/randy.jpeg";
 import pic_rahul from "../images/members/rahul.png";
+import pic_vipanchi from "../images/members/vipanchi.jpg";
+import moment from 'moment';
+import Swal from 'sweetalert2';
+require('moment-countdown');
 
 export default class Home extends React.Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            'email': '',
+            'emailValid': false
+        }
+        this.emailInput = React.createRef();
+        this.signupUser = this.signupUser.bind(this);
+        this.validateEmail = this.validateEmail.bind(this);
+        this.handleFormSubmit = this.handleFormSubmit.bind(this);
+    }
+
+    componentDidMount() {
+        setInterval(function () {
+            if (moment().unix() < 1574127600) {
+                document.getElementById("timer").innerHTML = moment.unix(1574127600).countdown().toString();
+            } else {
+                window.location = '/live';
+            }
+        }, 500);
+    }
+
+    signupUser() {
+        user.signup(this.state.email).then((result) => {
+            if (result.success == true) {
+                Swal.fire({
+                    icon: "success",
+                    title: "Success",
+                    text: `Thank you for signing up, ${result.firstName}`
+                });
+            } else {
+                Swal.fire({
+                    icon: "error",
+                    title: "Error",
+                    text: result.error
+                });
+            }
+        }).catch((err) => {
+            Swal.fire({
+                icon: "error",
+                type: "Error",
+                text: err.toString()
+            })
+        });
+    }
+
+    validateEmail(e) {
+        e.preventDefault();
+        if (this.emailInput.current.checkEmail()) {
+            this.signupUser();
+        }
+    }
+
+    handleFormSubmit(e) {
+        e.preventDefault();
+        // this.emailInput.current.checkEmail();
+        if (this.emailInput.current.checkEmail()) {
+            this.signupUser();
+        }
     }
 
     render() {
         return (
             <div>
                 <Header title={"Developer Student Club – Arizona State University"}>
-                    <div className={"intro"} style={{ background: `url(${grid})` }}>
+                    <div className={"intro"}>
+                        <center>
+                            <div id={"timer"}></div>
+                            <div className={"powered-by"}>
+                                <h1 className={"powered-by-text"}>Powered By</h1>
+                                <img align="absmiddle" src={google_developers_logo_white} class={"g_logo"}></img>
+                            </div>
+                            <h1 className={"almost-here"}>Streaming our info session live. Come back here on Monday, November 18th at 6:30 PM.</h1>
+                            <br />Our onsite info session is sold out! You can still <a target="_blank" href="https://www.eventbrite.com/e/info-session-developer-student-club-at-arizona-state-university-tickets-79307299267">Join the Waitlist</a>.
+                                    <form id="email_subscribe" onSubmit={this.handleFormSubmit}>
+                                <div className={"signup_for_updates"}>
+                                    <div className={"asuemail"}>
+                                        <ASUEmail
+                                            ref={this.emailInput}
+                                            email={(email) => {
+                                                this.setState({
+                                                    email
+                                                })
+                                            }}
+                                            valid={(emailValid) => {
+                                                this.setState({
+                                                    emailValid
+                                                })
+                                            }}
+                                        />
+                                        <div className={"button"}>
+                                            <Button theme={"blue"} onClick={this.validateEmail} >Signup for Updates</Button>
+                                        </div>
+                                    </div>
+                                    <div className={"clear"}></div>
+                                </div>
+                            </form>
+                            <br />
+                            <br />
+                            <div>Want to get a notification when the event starts? Signup above!</div>
+                            <br />
+                            <br />
+                        </center>
+                    </div>
+                    {/* <div className={"intro"} style={{ background: `url(${grid})` }}>
                         <div className={"intro_image"}>
                             <img src={intro_banner_bg} className={"intro_stuff"}></img>
                         </div>
                         <div className={"intro_text"}>
-                            {/* <img src={grid} className={"grid"}></img> */}
                             <div className={"intro_text_wrapper"}>
                                 <img src={google_developers_logo} class={"g_logo"}></img>
                                 <h1 className={"tagline"}>Build Great Things, Together</h1>
@@ -61,7 +162,7 @@ export default class Home extends React.Component {
                                 <p>Scroll down, there's more! ⬇️</p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className={"section"}>
                         <br />
                         <center>
@@ -137,6 +238,13 @@ export default class Home extends React.Component {
                                     <h3 className={"email"}><a href={"mailto:ananay@asudsc.com"}>ananay@asudsc.com</a></h3>
                                 </div>
                                 <div className={"member"}>
+                                    <img src={pic_andrew} />
+                                    <h3 className={"name"}>Andrew Hill</h3>
+                                    <h3 className={"position"}>Vice President</h3>
+                                    <br />
+                                    <h3 className={"email"}><a href={"mailto:andrew@asudsc.com"}>andrew@asudsc.com</a></h3>
+                                </div>
+                                <div className={"member"}>
                                     <img src={pic_randy} />
                                     <h3 className={"name"}>Randy Ngo</h3>
                                     <h3 className={"position"}>Vice President</h3>
@@ -149,6 +257,11 @@ export default class Home extends React.Component {
                                     <h3 className={"position"}>Vice President</h3>
                                     <br />
                                     <h3 className={"email"}><a href={"mailto:rahul@asudsc.com"}>rahul@asudsc.com</a></h3>
+                                </div>
+                                <div className={"member"}>
+                                    <img src={pic_vipanchi} />
+                                    <h3 className={"name"}>Vipanchi Chacham</h3>
+                                    <h3 className={"position"}>Core Team</h3>
                                 </div>
                             </div>
                         </center>

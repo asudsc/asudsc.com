@@ -50,10 +50,10 @@
 }
 
 .header_logo {
-    padding-left: 100px;
-    padding-top: 20px;
+    // padding-left: 100px;
+    padding-top: 25px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     img {
         width: 300px;
     }
@@ -72,7 +72,6 @@
 @media screen and (max-width: 900px) {
     .header_logo {
         padding-bottom: 20px;
-        padding-left: 50px;
         img {
             width: 300px;
         }

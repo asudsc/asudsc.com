@@ -13,6 +13,7 @@
     "@material-ui/core": "^4.4.2",
     "@material-ui/styles": "^4.5.2",
     "axios": "^0.19.0",
+    "countdown": "^2.6.0",
     "gatsby": "^2.15.14",
     "gatsby-image": "^2.2.18",
     "gatsby-plugin-manifest": "^2.2.16",
@@ -25,6 +26,7 @@
     "gatsby-transformer-sharp": "^2.2.14",
     "jsonwebtoken": "^8.5.1",
     "moment": "^2.24.0",
+    "moment-countdown": "0.0.3",
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
@@ -50,7 +52,8 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
+    "deploy": "gatsby build && gh-pages --dist public --branch gh-pages"
   },
   "repository": {
     "type": "git",

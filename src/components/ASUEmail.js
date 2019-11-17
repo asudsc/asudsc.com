@@ -1,5 +1,8 @@
 import React from 'react';
-import {TextField, FormControl, FormHelperText} from '@material-ui/core';
+import { styled } from '@material-ui/styles';
+import { TextField, FormControl, FormHelperText } from '@material-ui/core';
+// import TheTextField from '@material-ui/core/TextField';
+import "../styles/components/ASUEmail.scss";
 
 const crypto = require('crypto');
 
@@ -27,6 +30,7 @@ class ASUEmail extends React.Component {
             document.getElementById('asuemail-' + this.state.random).oninput = () => {
                 this.checkEmail();
             }
+            return false;
         } else {
             this.props.email(document.getElementById('asuemail-' + this.state.random).value);
             this.props.valid(true);
@@ -34,23 +38,30 @@ class ASUEmail extends React.Component {
                 'emailError': false
             });
             document.getElementById('email-helper-text-' + this.state.random).innerHTML = "☑️ Looks good! Go ahead and sign up!";
+            return true;
         }
     }
 
     render() {
         return (
             <FormControl fullWidth error={this.state.emailError} success={!this.state.emailError}>
-                <TextField
-                    id={"asuemail-" + this.state.random}
-                    error={this.state.emailError}
-                    placeholder={"Enter your asu.edu email here!"}
-                    fullWidth
-                    type="email"
-                    variant="outlined"
-                    required
-                    aria-describedby={"email-helper-text-" + this.state.random}
-                />
-                <FormHelperText id={"email-helper-text-" + this.state.random}> </FormHelperText>
+                <div className={"white"}>
+                    <TextField
+                        id={"asuemail-" + this.state.random}
+                        error={this.state.emailError}
+                        placeholder={"Enter your asu.edu email here!"}
+                        fullWidth
+                        type="email"
+                        variant="outlined"
+                        color="white"
+                        required
+                        onChange={() => {
+                            this.props.email(document.getElementById('asuemail-' + this.state.random).value)
+                        }}
+                        aria-describedby={"email-helper-text-" + this.state.random}
+                    />
+                    <FormHelperText id={"email-helper-text-" + this.state.random}> </FormHelperText>
+                </div>
             </FormControl>
         )
     }

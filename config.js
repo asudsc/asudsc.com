@@ -3,7 +3,7 @@ const dev = {
 }
 
 const prod = {
-    api: "https://api.asudsc.com"
+    api: "http://api.asudsc.com"
 }
 
 module.exports = prod;

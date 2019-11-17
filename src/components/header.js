@@ -35,9 +35,11 @@ export default class Header extends React.Component {
                 <Helmet>
                     <title>{this.props.title}</title>
                 </Helmet>
-                <div className={"header_logo"}>
-                    <img src={logo_horizontal}></img>
-                </div>
+                <center>
+                    <div className={"header_logo"}>
+                        <img src={logo_horizontal}></img>
+                    </div>
+                </center>
                 {/* <div className={"menu"}>
                     <Grid container
                         direction="row"

@@ -6,7 +6,7 @@ const axios = require('axios');
 const config = require('../../config');
 const jwt = require('jsonwebtoken');
 
-const signup = (email, recaptcha) => {
+const signup = (email) => {
     return new Promise((resolve, reject) => {
         axios.get(config.api + "/signup?email=" + email).then((res) => {
             resolve(res.data);

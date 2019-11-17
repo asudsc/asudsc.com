@@ -10,7 +10,42 @@
 
 .intro {
     overflow: hidden;
+    background: #112332;
+    color: #fff;
+    padding: 30px;
     position: relative;
+
+    .signup_for_updates {
+        margin-top: 50px;
+        .asuemail {
+            width: 500px;
+            display: inline-block;
+        }
+        .button {
+            display: inline-block;
+            position: relative;
+            top: 15px;
+            margin-left: 30px;
+        }
+        .clear {
+            clear: both;
+            display: block;
+        }
+    }
+
+    #timer {
+        font-size: 36pt;
+        font-family: "Google Sans Display";
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .almost-here {
+        margin-top: 50px;
+        font-size: 17pt;
+        line-height: 1.7em;
+    }
+
     .tagline {
         font-size: 30pt;
         font-weight: 400;
@@ -23,6 +58,7 @@
 
     .g_logo {
         width: 250px;
+
     }
 
     .intro_stuff {
@@ -65,6 +101,18 @@
 
     .intro_banner_bg {
         width: 100%;
+    }
+
+    .powered-by {
+        margin-top: 40px;
+        .g_logo {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .powered-by-text {
+            display: inline-block;
+            font-size: 14pt;
+        }
     }
 
 }
@@ -152,7 +200,7 @@
 
 @media screen and (max-width: 600px) {
     .intro {
-        padding: 70px;
+        padding: 30px;
         padding-top: 0px;
         overflow: auto !important;
         background-repeat: repeat;
@@ -161,6 +209,31 @@
             font-size: 18pt;
             font-weight: 500;
             margin-top: 10px;
+        }
+
+        .powered-by-text {
+            display: none !important;
+        }
+
+        #timer {
+            font-size: 20pt;
+            width: 100%;
+        }
+        
+        .almost-here {
+            font-size: 13pt;
+            width: 100%;
+        }
+        .signup_for_updates {
+            .asuemail {
+                width: 100%;
+            }
+            .button {
+                width: 100%;
+                margin-left: 0px;
+                margin-top: -10px;
+                margin-bottom: 50px;
+            }
         }
     }
 
