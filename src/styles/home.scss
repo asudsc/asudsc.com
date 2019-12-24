@@ -1,19 +1,37 @@
 .g_logo {
+    display: inline-block;
     width: 200px;
 }
 
 .line {
     background: #ccc;
-    width: 100%;
+    width: 50%;
     height: 1px;
 }
 
 .intro {
     overflow: hidden;
-    background: #112332;
+    background: linear-gradient(45deg, #112332, #07253e);;
     color: #fff;
     padding: 30px;
+    padding-top: 100px;
     position: relative;
+
+    .title {
+        font-size: 30pt;
+        margin-top: 40px;
+    }
+
+    .intro_image {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        img {
+            width: 100%;
+            height: 100%;
+            // width: 100px;
+        }
+    }
 
     .signup_for_updates {
         margin-top: 50px;
@@ -41,9 +59,10 @@
     }
 
     .almost-here {
-        margin-top: 50px;
-        font-size: 17pt;
+        margin-top: 40px;
+        font-size: 14pt;
         line-height: 1.7em;
+        width: 80%;
     }
 
     .tagline {
@@ -103,18 +122,30 @@
         width: 100%;
     }
 
-    .powered-by {
-        margin-top: 40px;
-        .g_logo {
-            display: inline-block;
-            margin-left: 10px;
-        }
-        .powered-by-text {
-            display: inline-block;
-            font-size: 14pt;
-        }
-    }
+}
 
+.powered-by {
+    margin-top: 20px;
+    .g_logo {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .powered-by-text {
+        display: inline-block;
+        font-size: 14pt;
+        font-weight: 500;
+    }
+}
+
+.live-stream {
+    margin-top: 40px;
+    h1 {
+        font-size: 20pt;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: normal;
+        width: 70%;
+    }
 }
 
 .section {
@@ -123,13 +154,14 @@
     .title {
         font-size: 24pt;
         font-weight: 400;
-        border-bottom: 4px solid #4d90fe;
+        border-bottom: 2px solid #4d90fe;
         display: inline;
         padding-bottom: 10px;
     }
     .description {
         margin-top: 60px;
         font-size: 13pt;
+        font-family: "Google Sans Display";
         font-weight: 500;
     }
     .pic {
@@ -152,14 +184,26 @@
 
 .socials {
     a {
-        color: #333333;
+        color: #000;
     }
-    font-size: 30pt;
+    font-size: 18pt;
     svg {
-        padding: 30px;
-        padding-bottom: 0px;
+        padding: 10px;
+        margin: 30px;
+        border-radius: 10px;
+        &:hover {
+            background: #eee;
+        }
     }
     display: inline-block;
+}
+
+.hiring {
+    font-size: 18pt;
+    border: 4px solid #eee;
+    border-radius: 10px;
+    width: 40%;
+    padding: 30px;
 }
 
 .members {
@@ -169,6 +213,7 @@
         margin: 30px;
         vertical-align: top;
         background: #fff;
+        border-radius: 10px;
         box-shadow: 0 0 20px rgba(0,0,0,0.1);
         width: 300px;
         padding: 30px;
@@ -198,13 +243,102 @@
 }
 
 
+.main_container {
+    background: #F8F9FA;
+    padding: 30px;
+    padding-top: 10px;
+    .box {
+        border: 1px solid rgba(0,0,0,0.125);
+        background: #fff;
+        border-radius: 5px;
+        padding: 30px;
+        width: 75%;
+        margin: 0 auto;
+        margin-top: 30px;
+        padding-bottom: 80px;
+        .desc {
+            line-height: 1.8em;
+            font-family: "Roboto";
+            color: #333;
+            * {
+                font-family: "Roboto";
+                line-height: 1.8em;
+            }
+        }
+        .social_icon {
+            display: inline-block;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 5px;
+            color: #555;
+            cursor: pointer;
+            &:hover {
+                background: #eee;
+            }
+        }
+    }
+}
+
+.main_info_box {
+    .tagline {
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+        font-size: 1.75rem;
+        color: #4a4a4a;
+        font-weight: 300;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .powered_by {
+        margin: 0 auto;
+        display: block;
+        margin-top: 50px;
+        span {
+            display: inline-block;
+            font-size: 18pt;
+        }
+        .google_logo {
+            position: relative;
+            top: -2px;
+            display: inline-block;
+            width: 300px;
+        }
+    }
+}
+
+
 @media screen and (max-width: 600px) {
+
+    .menu {
+        overflow: hidden;
+        height: 70px;
+    }
+
+    .main_container .box {
+        width: 300px !important;
+    }
+
+    .menu ul {
+        float: none;
+        display: block;
+        li {
+            display: block !important;
+        }
+    }
+
     .intro {
         padding: 30px;
         padding-top: 0px;
         overflow: auto !important;
         background-repeat: repeat;
         border-bottom: 1px solid rgba(0,0,0,0.09);
+
+        .title {
+            margin-top: 100px;
+            font-size: 22pt;
+        }
+
         .tagline {
             font-size: 18pt;
             font-weight: 500;
@@ -221,8 +355,9 @@
         }
         
         .almost-here {
-            font-size: 13pt;
+            font-size: 11.5pt;
             width: 100%;
+            text-align: justify;
         }
         .signup_for_updates {
             .asuemail {
@@ -230,9 +365,9 @@
             }
             .button {
                 width: 100%;
-                margin-left: 0px;
                 margin-top: -10px;
                 margin-bottom: 50px;
+                margin-left: 0px;
             }
         }
     }
@@ -291,6 +426,31 @@
 
     .info-session {
         margin-left: -2.5%;
+    }
+
+    .box {
+        width: 100% !important;
+        margin: 0;
+    }
+
+    .main_container {
+        padding-left: 10px;
+        padding-right: 12.5px;
+    }
+
+    .main_info_box {
+        width: 90% !important;
+        .powered_by {
+            .google_logo {
+                width: 250px !important;
+            }
+        }
+        .tagline {
+            font-weight: 400;
+            width: 90%;
+            font-size: 16pt;
+            line-height: 1.8em;
+        }
     }
 
 }

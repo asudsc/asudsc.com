@@ -29,7 +29,7 @@ const MyButtonASU = styled(TheButton)({
     background: 'linear-gradient(45deg, #8C1D40 30%, #bb3434 90%)',
     border: 0,
     borderRadius: 3,
-    boxShadow: '0 3px 5px 2px rgba(140,29,64, .3)',
+    boxShadow: '0 3px 5px 2px rgba(140,29,64, .1)',
     color: 'white',
     height: 48,
     padding: '0 30px',
@@ -37,6 +37,16 @@ const MyButtonASU = styled(TheButton)({
 
 const MyButtonBlue = styled(TheButton)({
     background: 'linear-gradient(30deg, #1b40de, #2cb4ed)',
+    border: 0,
+    borderRadius: 3,
+    boxShadow: '0 3px 5px 2px rgba(44, 180, 237, .1)',
+    color: 'white',
+    height: 48,
+    padding: '0 30px',
+});
+
+const MyButtonBlueSolid = styled(TheButton)({
+    background: 'linear-gradient(30deg, rgb(41, 119, 245), rgb(41, 119, 245))',
     border: 0,
     borderRadius: 3,
     boxShadow: '0 3px 5px 2px rgba(44, 180, 237, .1)',
@@ -74,6 +84,16 @@ class Button extends React.Component {
                         >
                             {this.props.children}
                         </MyButtonBlue>
+                    )
+                }
+
+{
+                    (this.state.theme == "blue_solid") && (
+                        <MyButtonBlueSolid
+                            {...this.props}
+                        >
+                            {this.props.children}
+                        </MyButtonBlueSolid>
                     )
                 }
 

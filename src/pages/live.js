@@ -8,7 +8,7 @@ export default class Live extends React.Component {
     render() {
         return (
             <div>
-                Livestream
+                <iframe width="1920" height="1080" src="https://www.youtube.com/embed/aMvzFi4EX2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         )
     }
