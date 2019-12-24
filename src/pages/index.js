@@ -1,7 +1,7 @@
 import React from "react"
 import bg from "../images/bg.png";
 import logo from "../images/logo.jpg";
-import { FaFacebookF, FaTwitter, FaInstagram, FaChevronDown, FaCalendar, FaClock, FaLocationArrow, FaSlackHash } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaChevronDown, FaCalendar, FaClock, FaLocationArrow, FaSlackHash, FaGithub, FaLinkedin } from "react-icons/fa";
 import Header from "../components/header";
 import intro_image from "../images/intro_3.jpg";
 import { Grid, Box } from '@material-ui/core';
@@ -24,6 +24,7 @@ import { FiMapPin, FiClock, FiCalendar, FiPlayCircle, FiSlack } from "react-icon
 import coreteam_graphic from "../images/core-team.png";
 import moment from 'moment';
 import Swal from 'sweetalert2';
+import members from "../models/members";
 require('moment-countdown');
 
 export default class Home extends React.Component {
@@ -262,8 +263,74 @@ export default class Home extends React.Component {
               </Box>
             </div>
 
-
-
+            {/* Members */}
+            <div className={"box"}>
+              <Box pt={7}>
+                <center>
+                  <h1 className={"title"}>Meet the Core Team</h1>
+                  <div className={"members"}>
+                    {members.map((member) => (
+                      <div className={"member"}>
+                        <div className={"member_img"}>
+                          <img src={member.image}></img>
+                        </div>
+                        <div className={"member_name"}>
+                          {member.website &&
+                            <a href={member.website}><span>{member.name}</span></a>
+                          }
+                          {!member.website &&
+                            <span>{member.name}</span>
+                          }
+                        </div>
+                        <div className={"member_position"}>
+                          {member.position}
+                        </div>
+                        <div className={"member_email"}>
+                          {member.email}
+                        </div>
+                        <div className={"member_socials"}>
+                          {member.github &&
+                            <div className={"social_icon"}>
+                              <a href={member.github} target="_blank">
+                                <FaGithub size={30} />
+                              </a>
+                            </div>
+                          }
+                          {member.linkedin &&
+                            <div className={"social_icon"}>
+                              <a href={member.linkedin} target="_blank">
+                                <FaLinkedinIn size={30} />
+                              </a>
+                            </div>
+                          }
+                          {member.facebook &&
+                            <div className={"social_icon"}>
+                              <a href={member.facebook} target="_blank">
+                                <FaFacebookF size={30} />
+                              </a>
+                            </div>
+                          }
+                          {member.twitter &&
+                            <div className={"social_icon"}>
+                              <a href={member.twitter}>
+                                <FaTwitter size={30} />
+                              </a>
+                            </div>
+                          }
+                          {member.instagram &&
+                            <div className={"social_icon"}>
+                              <a href={member.instagram} target="_blank">
+                                <FaInstagram size={30} />
+                              </a>
+                            </div>
+                          }
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </center>
+              </Box>
+            </div>
 
           </div>
         </Header>

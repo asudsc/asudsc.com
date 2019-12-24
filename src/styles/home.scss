@@ -206,29 +206,61 @@
     padding: 30px;
 }
 
-.members {
-    margin-top: 75px;
-    .member {
-        display: inline-block;
-        margin: 30px;
-        vertical-align: top;
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        width: 300px;
-        padding: 30px;
-        img {
-            width: 150px;
-            border-radius: 100%;
-        }
-        .name {
-            margin-top: 20px;
-            font-size: 20pt;
+// .members {
+//     margin-top: 75px;
+//     .member {
+//         display: inline-block;
+//         margin: 30px;
+//         vertical-align: top;
+//         background: #fff;
+//         border-radius: 10px;
+//         box-shadow: 0 0 20px rgba(0,0,0,0.1);
+//         width: 300px;
+//         padding: 30px;
+//         img {
+//             width: 150px;
+//             border-radius: 100%;
+//         }
+//         .name {
+//             margin-top: 20px;
+//             font-size: 20pt;
 
+//         }
+//         .position {
+//             margin-top: 10px;
+//             color: #4d904d;
+//         }
+//     }
+// }
+
+.members {
+    .member {
+        margin: 50px;
+        padding: 30px;
+        display: inline-block;
+        border: 5px solid rgba(0,0,0,0.08);
+        border-radius: 10px;
+        width: 300px;
+        .member_img {
+            img {
+                width: 150px;
+                border-radius: 100%;
+            }
         }
-        .position {
+        .member_name {
+            font-size: 18pt;
+            margin-top: 20px;
+        }
+        .member_position {
             margin-top: 10px;
-            color: #4d904d;
+        }
+        .member_email {
+            margin-top: 10px;
+        }
+        .social_icon {
+            a {
+                color: rgba(0,0,0,0.5);
+            }
         }
     }
 }
