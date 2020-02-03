@@ -48,7 +48,7 @@ export default class CoreTeamHiring extends React.Component {
                     <br />
                     <p>We meet on every Monday at 6 PM. The details of the next meeting are below.</p>
                     <br />
-                    <h2>Date: Monday, January 27th 2020.</h2><br />
+                    <h2>Date: Monday, Feb 3rd 2020.</h2><br />
                     <h2>Time: 6:00 PM</h2><br />
                     <h2>Venue: Hayden Library Room 232</h2>
                     {/* <div className={"desc"}>Wanted to be part of something that makes a difference? You've come to the right place. We&rsquo;re looking for passionate and talented individuals to be part of our core team! Picture yourself organizing something like Google I/O Extended. <br /><br /> What roles can you think of? Here are a few of them:
