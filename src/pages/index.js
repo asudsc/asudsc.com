@@ -21,10 +21,11 @@ import intro_banner_bg from '../images/intro_banner_bg.jpg';
 import grid from '../images/grid.svg';
 import get_involved_pic from "../images/get_involved.png";
 import { FiMapPin, FiClock, FiCalendar, FiPlayCircle, FiSlack } from "react-icons/fi";
-import coreteam_graphic from "../images/core-team.png";
 import moment from 'moment';
 import Swal from 'sweetalert2';
 import members from "../models/members";
+import CoreTeamHiring from "../components/partials/CoreTeamHiring";
+import Meetings from "../components/partials/Meetings";
 require('moment-countdown');
 
 export default class Home extends React.Component {
@@ -220,48 +221,11 @@ export default class Home extends React.Component {
               </center>
             </div>
 
+            {/* Meeting */}
+            <Meetings />
+
             {/* Core Team Hiring */}
-            <div className={"box"}>
-              <Box pt={7}>
-                <Grid
-                  container
-                  direction={this.state.responsive ? "column" : "row"}
-                  xs={12}
-                >
-                  <Grid
-                    xs={this.state.responsive ? 12 : 7}
-                    justify="center"
-                    alignItems="center"
-                  >
-                    <img src={coreteam_graphic} width={this.state.responsive ? "300px" : "auto"} />
-                  </Grid>
-                  <Grid xs={this.state.responsive ? 12 : 5}>
-                    <h1 className={"title"}>
-                      We&rsquo;re hiring!
-                                            </h1>
-                    <br />
-                    <br />
-                    <div className={"desc"}>Wanted to be part of something that makes a difference? You've come to the right place. We&rsquo;re looking for passionate and talented individuals to be part of our core team! Picture yourself organizing something like Google I/O Extended. <br /><br /> What roles can you think of? Here are a few of them:
-                                                <br /><br />
-                      <ul>
-                        <li>Treasurer</li>
-                        <li>Event Manager</li>
-                        <li>Web Developer</li>
-                        <li>Photographer</li>
-                        <li>Teaching Assistant</li>
-                        <li>Social Media Manager</li>
-                        <li>Graphic Designer</li>
-                        <li>Videographer</li>
-                        <li>... and any other role you can think of!</li>
-                      </ul>
-                    </div>
-                    <br />
-                    <br />
-                    <Button theme={"blue_solid"} onClick={this.coreTeamApply}>Apply now</Button>
-                  </Grid>
-                </Grid>
-              </Box>
-            </div>
+            {/* <CoreTeamHiring />*/}
 
             {/* Members */}
             <div className={"box"}>
