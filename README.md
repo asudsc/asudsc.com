@@ -2,10 +2,9 @@
 <img src="https://user-images.githubusercontent.com/5569219/73918236-74bf6180-487e-11ea-8785-27cd1261835b.png">
 </center>
 <br />
-<h3>The official website repository for Developer Student Club at Arizona State University. Live at <a href="https://asudsc.com">https://asudsc.com</a>. The website is built using GatsbyJS, which is a static site generator for React. You can read the instructions on how to use it down below. </h3>
-<h3>All branding elements including but not limited to the Google Sans font, Google Developers logo and the Developer Student Clubs logo are property of Google, Inc. Copying, modifying, reproducing and usage any branding element without Google's permission is strictly prohibited.</h3>
+<p>The official website repository for Developer Student Club at Arizona State University. Live at <a href="https://asudsc.com">https://asudsc.com</a>. The website is built using GatsbyJS, which is a static site generator for React. You can read the instructions on how to use it down below. </p>
+<p>All branding elements including but not limited to the Google Sans font, Google Developers logo and the Developer Student Clubs logo are property of Google, Inc. Copying, modifying, reproducing and usage any branding element without Google's permission is strictly prohibited.</p>
 
-----
 
 ## 🚀 Quick start
 
