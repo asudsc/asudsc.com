@@ -35,7 +35,7 @@ let members = [
         "image": rahul,
         "position": "Vice President",
         "email": "rahul@asudsc.com",
-        "website": ""
+        "linkedin": "https://www.linkedin.com/in/rahulrajan-karthikeyan-105548155/"
     },
     {
         "name": "Amitabh Das",
@@ -49,8 +49,8 @@ let members = [
         "name": "Vipanchi Chacham",
         "image": vipanchi,
         "position": "Core Team",
-        "email": "-",
-        "website": ""
+        "email": "vchacham@asu.edu",
+        "linkedin": "https://www.linkedin.com/in/vipanchi-chacham/"
     }
 ]
 
