@@ -38,19 +38,19 @@ let members = [
         "website": ""
     },
     {
+        "name": "Amitabh Das",
+        "image": amitab,
+        "position": "Web Developer and Instructional Aide",
+        "email": "adas59@asu.edu",
+        "github": "https://github.com/amitab",
+        "linkedin": "https://linkedin.com/in/amitab",
+    },
+    {
         "name": "Vipanchi Chacham",
         "image": vipanchi,
         "position": "Core Team",
         "email": "-",
         "website": ""
-    },
-    {
-        "name": "Amitabh Das",
-        "image": amitab,
-        "position": "Core Team",
-        "email": "adas59@asu.edu",
-        "github": "https://github.com/amitab",
-        "linkedin": "https://linkedin.com/in/amitab",
     }
 ]
 
