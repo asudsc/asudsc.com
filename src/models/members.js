@@ -1,7 +1,9 @@
 let ananay = require('../images/members/ananay.jpg');
-let andrew =  require('../images/members/andrew.jpg');
+let andrew =  require('../images/members/andrew_swag.png');
+// let andrew =  require('../images/members/andrew.jpg');
 let rahul =  require('../images/members/rahul.png');
 let vipanchi =  require('../images/members/vipanchi.jpg');
+let amitab = require('../images/members/amitab.jpg')
 // import rahul from '../images/members/rahul.png';
 // import vipanchi from '../images/members/vipanchi.jpg';
 
@@ -41,6 +43,14 @@ let members = [
         "position": "Core Team",
         "email": "-",
         "website": ""
+    },
+    {
+        "name": "Amitabh Das",
+        "image": amitab,
+        "position": "Core Team",
+        "email": "adas59@asu.edu",
+        "github": "https://github.com/amitab",
+        "linkedin": "https://linkedin.com/in/amitab",
     }
 ]
 
