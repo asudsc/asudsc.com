@@ -8,6 +8,7 @@ let uday = require('../images/members/uday.jpg');
 
 // import rahul from '../images/members/rahul.png';
 // import vipanchi from '../images/members/vipanchi.jpg';
+let sabya = require('../images/members/sabya.jpg')
 
 let members = [
     {
@@ -38,6 +39,7 @@ let members = [
         "position": "Vice President",
         "email": "rahul@asudsc.com",
         "linkedin": "https://www.linkedin.com/in/rahulrajan-karthikeyan-105548155/"
+
     },
     {
         "name": "Amitabh Das",
@@ -55,7 +57,24 @@ let members = [
         "website": "",
         "github": "https://github.com/udaypb",
         "linkedin": "https://www.linkedin.com/in/udaypb"
+    },
+    {
+        "name": "Sabyasachi Mohanty",
+        "image": sabya,
+        "position": "Web Developer and Instructional Aide",
+        "email": "smohan31@asu.edu",
+        "github": "https://github.com/mohantysabyasachi27",
+        "instagram": "https://instagram.com/ha8breeder",
+        "linkedin": "https://www.linkedin.com/in/mohantysabyasachi27"
+    },
+    {
+        "name": "Vipanchi Chacham",
+        "image": vipanchi,
+        "position": "Core Team",
+        "email": "-",
+        "website": ""
     }
+    
 ]
 
 module.exports = members;
