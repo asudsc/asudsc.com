@@ -18,10 +18,11 @@
 
 1.  **Start developing.**
 
-    Navigate into your the clone directory and start the server
+    Navigate into your the clone directory, install the node modules  and then start the server. Using yarn is <b>highly recommended</b> instead of npm!
 
     ```sh
     cd asudsc.com/
+    yarn
     gatsby develop
     ```
 
