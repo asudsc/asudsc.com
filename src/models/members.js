@@ -58,7 +58,7 @@ let members = [
         "website": ""
     },
     {
-        "name": "Uday PB",
+        "name": "Uday PB ",
         "image": uday,
         "position": "Web Developer and Instructional Aide",
         "email": "uday.pb26@gmail.com",
