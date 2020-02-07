@@ -3,7 +3,9 @@ let andrew =  require('../images/members/andrew_swag.png');
 // let andrew =  require('../images/members/andrew.jpg');
 let rahul =  require('../images/members/rahul.png');
 let vipanchi =  require('../images/members/vipanchi.jpg');
-let amitab = require('../images/members/amitab.jpg')
+let amitab = require('../images/members/amitab.jpg');
+let uday = require('../images/members/uday.jpg');
+
 // import rahul from '../images/members/rahul.png';
 // import vipanchi from '../images/members/vipanchi.jpg';
 
@@ -49,8 +51,17 @@ let members = [
         "name": "Vipanchi Chacham",
         "image": vipanchi,
         "position": "Core Team",
-        "email": "vchacham@asu.edu",
-        "linkedin": "https://www.linkedin.com/in/vipanchi-chacham/"
+        "email": "-",
+        "website": ""
+    },
+    {
+        "name": "Uday PB ",
+        "image": uday,
+        "position": "Web Developer and Instructional Aide",
+        "email": "uday.pb26@gmail.com",
+        "website": "",
+        "github": "https://github.com/udaypb",
+        "linkedin": "https://www.linkedin.com/in/udaypb"
     }
 ]
 
