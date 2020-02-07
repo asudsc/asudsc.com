@@ -48,14 +48,7 @@ let members = [
         "linkedin": "https://linkedin.com/in/amitab",
     },
     {
-        "name": "Vipanchi Chacham",
-        "image": vipanchi,
-        "position": "Core Team",
-        "email": "-",
-        "website": ""
-    },
-    {
-        "name": "Uday PB ",
+        "name": "Uday PB",
         "image": uday,
         "position": "Web Developer and Instructional Aide",
         "email": "uday.pb26@gmail.com",
