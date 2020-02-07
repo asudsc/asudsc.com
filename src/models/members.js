@@ -2,6 +2,8 @@ let ananay = require('../images/members/ananay.jpg');
 let andrew =  require('../images/members/andrew.jpg');
 let rahul =  require('../images/members/rahul.png');
 let vipanchi =  require('../images/members/vipanchi.jpg');
+let uday =  require('../images/members/uday.jpg');
+
 // import rahul from '../images/members/rahul.png';
 // import vipanchi from '../images/members/vipanchi.jpg';
 
@@ -41,6 +43,15 @@ let members = [
         "position": "Core Team",
         "email": "-",
         "website": ""
+    },
+    {
+        "name": "Uday PB",
+        "image": uday,
+        "position": "Web Developer and Instructional Aide",
+        "email": "uday.pb26@gmail.com",
+        "website": "",
+        "github": "https://github.com/udaypb",
+        "linkedin": "https://www.linkedin.com/in/udaypb"
     }
 ]
 
