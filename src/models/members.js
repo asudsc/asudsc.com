@@ -1,9 +1,14 @@
 let ananay = require('../images/members/ananay.jpg');
-let andrew =  require('../images/members/andrew.jpg');
+let andrew =  require('../images/members/andrew_swag.png');
+// let andrew =  require('../images/members/andrew.jpg');
 let rahul =  require('../images/members/rahul.png');
 let vipanchi =  require('../images/members/vipanchi.jpg');
+<<<<<<< HEAD
 let uday =  require('../images/members/uday.jpg');
 
+=======
+let amitab = require('../images/members/amitab.jpg')
+>>>>>>> master
 // import rahul from '../images/members/rahul.png';
 // import vipanchi from '../images/members/vipanchi.jpg';
 
@@ -35,7 +40,15 @@ let members = [
         "image": rahul,
         "position": "Vice President",
         "email": "rahul@asudsc.com",
-        "website": ""
+        "linkedin": "https://www.linkedin.com/in/rahulrajan-karthikeyan-105548155/"
+    },
+    {
+        "name": "Amitabh Das",
+        "image": amitab,
+        "position": "Web Developer and Instructional Aide",
+        "email": "adas59@asu.edu",
+        "github": "https://github.com/amitab",
+        "linkedin": "https://linkedin.com/in/amitab",
     },
     {
         "name": "Vipanchi Chacham",
