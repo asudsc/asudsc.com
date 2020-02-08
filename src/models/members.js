@@ -1,17 +1,12 @@
 let ananay = require('../images/members/ananay.jpg');
 let andrew =  require('../images/members/andrew_swag.png');
-// let andrew =  require('../images/members/andrew.jpg');
 let rahul =  require('../images/members/rahul.png');
-//let vipanchi =  require('../images/members/vipanchi.jpg');
 let amitab = require('../images/members/amitab.jpg');
 let uday = require('../images/members/uday.jpg');
 let steve = require('../images/members/steve.jpg');
 let james = require('../images/members/james.jpg');
 let carly = require('../images/members/carly.jpg');
 let radhika = require('../images/members/radhika.jpg');
-
-// import rahul from '../images/members/rahul.png';
-// import vipanchi from '../images/members/vipanchi.jpg';
 let sabya = require('../images/members/sabya.jpg')
 
 let members = [
@@ -89,7 +84,7 @@ let members = [
     {
         "name": "Carly Cordero",
         "image": carly,
-        "position": "Social Media Manager",
+        "position": "Photographer",
         "email": "cpcordero@asu.edu",
         "linkedin": "https://www.linkedin.com/in/carlycordero/"
     }
