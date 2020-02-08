@@ -2,9 +2,13 @@ let ananay = require('../images/members/ananay.jpg');
 let andrew =  require('../images/members/andrew_swag.png');
 // let andrew =  require('../images/members/andrew.jpg');
 let rahul =  require('../images/members/rahul.png');
-let vipanchi =  require('../images/members/vipanchi.jpg');
+//let vipanchi =  require('../images/members/vipanchi.jpg');
 let amitab = require('../images/members/amitab.jpg');
 let uday = require('../images/members/uday.jpg');
+let steve = require('../images/members/steve.jpg');
+let james = require('../images/members/james.jpg');
+let carly = require('../images/members/carly.jpg');
+let radhika = require('../images/members/radhika.jpg');
 
 // import rahul from '../images/members/rahul.png';
 // import vipanchi from '../images/members/vipanchi.jpg';
@@ -49,6 +53,15 @@ let members = [
         "linkedin": "https://linkedin.com/in/amitab",
     },
     {
+        "name": "James Willman",
+        "image": james,
+        "position": "Event Coordinator",
+        "email": "jwillma1@asu.edu",
+        "twitter": "https://twitter.com/imjameswillman",
+        "instagram": "https://www.instagram.com/imjameswillman/",
+        "linkedin": "https://www.linkedin.com/in/jameswillman/s"
+    },
+    {
         "name": "Uday PB",
         "image": uday,
         "position": "Web Developer and Instructional Aide",
@@ -65,6 +78,20 @@ let members = [
         "github": "https://github.com/mohantysabyasachi27",
         "instagram": "https://instagram.com/ha8breeder",
         "linkedin": "https://www.linkedin.com/in/mohantysabyasachi27"
+    },
+    {
+        "name": "Devyash Lodha",
+        "image": steve,
+        "position": "Treasurer",
+        "email": "dlodha@asu.edu",
+        "linkedin": "https://www.linkedin.com/in/yash101/"
+    },
+    {
+        "name": "Carly Cordero",
+        "image": carly,
+        "position": "Social Media Manager",
+        "email": "cpcordero@asu.edu",
+        "linkedin": "https://www.linkedin.com/in/carlycordero/"
     }
 ]
 
