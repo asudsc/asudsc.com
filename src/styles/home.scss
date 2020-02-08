@@ -241,6 +241,8 @@
         border: 5px solid rgba(0,0,0,0.08);
         border-radius: 10px;
         width: 300px;
+        transform: scale(1.0, 1.0);
+        transition: 0.0666s ease-out;
         .member_img {
             img {
                 width: 150px;
@@ -263,6 +265,10 @@
             }
         }
     }
+}
+
+.member:hover {
+    transform: scale(1.08, 1.08);
 }
 
 .about {
