@@ -6,7 +6,6 @@ let uday = require('../images/members/uday.jpg');
 let steve = require('../images/members/steve.jpg');
 let james = require('../images/members/james.jpg');
 let carly = require('../images/members/carly.jpg');
-let radhika = require('../images/members/radhika.jpg');
 let sabya = require('../images/members/sabya.jpg')
 
 let members = [
