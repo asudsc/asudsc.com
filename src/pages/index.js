@@ -222,7 +222,7 @@ export default class Home extends React.Component {
             </div>
 
             {/* Meeting */}
-            <Meetings />
+            {/* <Meetings /> */}
 
             {/* Core Team Hiring */}
             {/* <CoreTeamHiring />*/}
