@@ -8,4 +8,4 @@ const prod = {
     events_api: "https://events-api.asudsc.com"
 }
 
-module.exports = dev;
+module.exports = prod;
