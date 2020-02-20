@@ -11,11 +11,18 @@ export default class EventList extends React.Component {
             events: []
         }
     }
-    
+
     componentDidMount() {
         events.get().then((res) => {
+            let events = []
+            for (let i = 0; i < res.length; i++) {
+                console.log("COOL", res[i].start);
+                if (res[i].start >= Date.now()) {
+                    events.push(res[i]);
+                }
+            }
             this.setState({
-                events: res
+                events
             })
         }).catch((err) => {
             console.log("Error fetching events!");
@@ -27,16 +34,18 @@ export default class EventList extends React.Component {
         return (
             <div class="events-list">
                 <h2>Upcoming Events</h2>
-                {this.state.events.map((event) => (
-                    <EventCard
-                        id={event.id}
-                        name={event.name}
-                        start={event.start}
-                        end={event.end}
-                        location={event.location}
-                        map_url={event.map_url}
-                    />
-                ))}
+                {this.state.events.map((event) => 
+                        (event.start >= Date.now()) && (
+                            <EventCard
+                                id={event.id}
+                                name={event.name}
+                                start={event.start}
+                                end={event.end}
+                                location={event.location}
+                                map_url={event.map_url}
+                            />
+                        )
+                )}
             </div>
         );
     }

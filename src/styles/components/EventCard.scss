@@ -1,13 +1,16 @@
 @import "../global.scss";
 
 .event-card {
-    padding: 30px;
+    padding: 20px;
     border: 3px solid rgba(0,0,0,0.05);
     // box-shadow: 0 0 10px rgba(0,0,0,0.1);
     background: #fff;
     max-width: 400px;
     width: 100%;
     border-radius: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    margin: 20px;
     .name {
         font-size: 15pt;
         color: #4e5869;
@@ -32,5 +35,8 @@
 }
 
 @media screen and (max-width: 600px) {
-
+    .event-card {
+        width: 250px !important;
+        display: block;
+    }
 }

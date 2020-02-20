@@ -56,7 +56,7 @@ export default class EventCard extends React.Component {
                 </div>
                 <Grid container justify={"center"}>
                     <Box pt={4}>
-                        <a href={this.props.rsvp}>
+                        <a onClick={this.props.rsvp}>
                             <Button
                                 theme={"blue"}
                             >

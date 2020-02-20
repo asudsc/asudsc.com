@@ -1,0 +1,137 @@
+<html>
+
+<head>
+  <style>
+    @import url("https://fonts.googleapis.com/icon?family=Google+Sans:400,500");
+
+    .logo {
+      width: 300px;
+    }
+
+    .content {
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 50px;
+      font-size: 14pt;
+      font-family: "Google Sans", "Helvetica Neue", "Arial";
+      line-height: 1.8em;
+    }
+
+    .title {
+      font-size: 16pt;
+      font-family: "Google Sans", "Helvetica Neue", "Arial";
+    }
+
+    .subtitle {
+      font-size: 13pt;
+      color: #4185f6;
+    }
+
+    ol {
+      padding-left: 1.8em;
+    }
+
+    a {
+      color: #4185f6;
+      text-decoration: none;
+    }
+
+    ol li {
+      margin-top: 30px;
+    }
+
+    .social_icon {
+      width: 20px;
+    }
+
+    .socials {
+      text-align: center;
+      padding: 30px;
+    }
+
+    .socials a {
+      padding: 20px;
+    }
+
+    .socials a img {
+      width: 24px;
+    }
+
+    .prefs {
+      text-align: center;
+      padding: 30px;
+      background: #fbfbfb;
+    }
+
+    .button {
+      margin-top: 30px;
+      background: #4285f4;
+      padding: 15px;
+      color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      font-size: 12pt;
+      width: 300px;
+      border-radius: 5px;
+    }
+
+    .green {
+      background: #0d9d58;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <a href="https://asudsc.com">
+      <img src="https://asudsc.com/static/logo-3c49c4e793d63ba3a636b9bfd4fa7803.jpg" class="logo" />
+    </a>
+    <br />
+    <% if (title) { %>
+    <span class="title"><%- title %></span>
+    <% } %>
+    <br />
+  </center>
+  <div class="content">
+    <% if (content) { %>
+    <p><%- content %>
+      <br /><br />
+      This email is to confirm that you're attending our event: <%- event_name %>. <br />
+      On the day of the event, please make sure you have your ASU ID, since that will be the form of identification used to check you in.
+    </p>
+    <% } %>
+    <center>
+      <% if (call_to_action) { %>
+      <div style='display: <%= call_to_action.display %>'>
+        <a target="_blank" rel="noopener" href="<%= call_to_action.url %>">
+          <div class="button">
+            <%- call_to_action.name %>
+          </div>
+        </a>
+      </div>
+      <% } %>
+    </center>
+    <br />
+    <br />
+    Best,
+    <br />
+    <a href="https://ananayarora.com">Ananay Arora</a><br />
+    President, <a href="https://asudsc.com">Developer Student Club at Arizona State University</a><br />
+    <br />
+    <div class="socials">
+      <a target="_blank" rel="noopener" href="https://instagram.com/asu.dsc">
+        <img src="https://i.imgur.com/pZiUQgN.png" />
+      </a>
+      <a target="_blank" rel="noopener" href="https://facebook.com/asudsc"><img
+          src="https://i.imgur.com/kN8cpwb.png"></a>
+      <a target="_blank" rel="noopener" href="https://twitter.com/asudsc"><img
+          src="https://i.imgur.com/hVSvJi8.png"></a>
+    </div>
+    <br />
+    <center>
+      <img src="https://asudsc.com/static/google_developers-d02663a4803868f5f4c69e99d1ba79f2.png" align="absmiddle"
+        class="logo" />
+    </center>
+  </div>
+</body>
+
+</html>
