@@ -28,6 +28,7 @@ import Members from "../components/partials/Members";
 import Signup from "../components/partials/signup_for_updates.js";
 import EventsController from "../controllers/events";
 import Swal from 'sweetalert2';
+import SolutionChallenge from '../components/partials/solution_challenge.js';
 
 require('moment-countdown');
 
@@ -221,8 +222,18 @@ export default class Home extends React.Component {
               )}
 
               {!this.state.loading && this.state.event_status == "ongoing" && (
-                <h2>{this.state.current_event["Event Name"]} is happening right now!</h2>
+                <div>
+                  <h2>{this.state.current_event["Event Name"]} is happening right now!</h2>
+                  <br />
+                  <br />
+                  <div>
+                    {this.state.current_event["Livestream URL"] != "FALSE" &&
+                      <a target="_blank" href={this.state.current_event["Livestream URL"]}><Button theme={"blue"}>Watch the livestream!</Button></a>
+                    }
+                  </div>
+                </div>
               )}
+
 
               <br />
               {/*
@@ -333,6 +344,8 @@ export default class Home extends React.Component {
             </div>
 
             <Signup handleFormSubmit={this.handleFormSubmit} validateEmail={this.validateEmail} />
+
+            <SolutionChallenge />
 
             {/* Meeting */}
             {/* <Meetings /> */}
