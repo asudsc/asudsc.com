@@ -348,7 +348,7 @@ export default class Home extends React.Component {
             <SolutionChallenge />
 
             {/* Meeting */}
-            {/* <Meetings /> */}
+            <Meetings />
             <Events />
             {/* Core Team Hiring */}
             {/* <CoreTeamHiring />*/}
