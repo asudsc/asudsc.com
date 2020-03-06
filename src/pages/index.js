@@ -133,11 +133,24 @@ export default class Home extends React.Component {
         });
         EventsController.rsvpWithEmail(id, email.value).then((res) => {
           if (res.data.success == true) {
-            Swal.fire({
-              title: res.data.message,
-              type: "success",
-              text: "You've successfully registered for this event!"
-            });
+            console.log(id);
+            if (id == "3") {
+              Swal.fire({
+                title: 'Register for Google Solution Challenge 2020',
+                type: 'info',
+                text: "Thank you for RSVPing to this event. To confirm your entry, please register with Google for the Solution Challenge by clicking the button below.",
+                showConfirmButton: true,
+                confirmButtonText: 'Register'
+              }).then(() => {
+                window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdd3yPa-OsA4yRP7QRFLzmKBwk5uWRVVxqT1oeF1VRkChisXg/viewform";
+              });
+            } else {
+              Swal.fire({
+                title: "Success",
+                type: "success",
+                text: "You've successfully registered for this event!"
+              });
+            }
           } else {
             if (res.data.error == "need_asu_id") {
               Swal.fire({
@@ -165,11 +178,24 @@ export default class Home extends React.Component {
                   EventsController.rsvpWithEmailAndASUID(id, email.value, asu_id.value).then((rsvpResult) => {
                     console.log(rsvpResult.data.success);
                     if (rsvpResult.data.success == true) {
-                      Swal.fire({
-                        title: "Success",
-                        type: "success",
-                        text: "You've successfully registered for this event!"
-                      });
+                      console.log(id);
+                      if (id == "3") {
+                        Swal.fire({
+                          title: 'Register for Google Solution Challenge 2020',
+                          type: 'info',
+                          text: "Thank you for RSVPing to this event. To confirm your entry, please register with Google for the Solution Challenge by clicking the button below.",
+                          showConfirmButton: true,
+                          confirmButtonText: 'Register'
+                        }).then(() => {
+                          window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdd3yPa-OsA4yRP7QRFLzmKBwk5uWRVVxqT1oeF1VRkChisXg/viewform";
+                        });
+                      } else {
+                        Swal.fire({
+                          title: "Success",
+                          type: "success",
+                          text: "You've successfully registered for this event!"
+                        });
+                      }
                     } else {
                       Swal.fire({
                         title: "Oops!",
