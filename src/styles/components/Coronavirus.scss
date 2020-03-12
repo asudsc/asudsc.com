@@ -1,0 +1,21 @@
+.coronavirus_advisory {
+    padding: 30px;
+    background: #000819;
+    color: #fff;
+    h1 {
+        font-size: 24pt;
+        text-align: center;
+    }
+    p {
+        color: #ccc;
+        font-family: "Roboto";
+        margin-top: 20px;
+        font-size: 16pt;
+        width: 90%;
+        line-height: 1.8em;
+    }
+    a {
+        color: #fff;
+        border-bottom: 2px dashed #fff;
+    }
+}

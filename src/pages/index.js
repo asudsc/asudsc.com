@@ -29,6 +29,7 @@ import Signup from "../components/partials/signup_for_updates.js";
 import EventsController from "../controllers/events";
 import Swal from 'sweetalert2';
 import SolutionChallenge from '../components/partials/solution_challenge.js';
+import Coronavirus from "../components/partials/Coronavirus";
 
 require('moment-countdown');
 
@@ -223,46 +224,50 @@ export default class Home extends React.Component {
     return (
       <div>
         <Header title={"Developer Student Club – Arizona State University"}>
-          <div className={"intro"}>
+          <div className={"intro_wrapper"}>
             <center>
-              <h1 className={"title"}>Developer Student Club at Arizona State University</h1>
-              <br />
-              {this.state.loading &&
-                <CircularProgress />
-              }
-              {!this.state.loading && this.state.event_status == "none" &&
-                <h2>We don't have an event coming up soon! Signup for our mailing list, and we'll let you know.</h2>
-              }
+              <Coronavirus />
+            </center>
+            <div className={"intro"}>
+              <center>
+                <h1 className={"title"}>Developer Student Club at Arizona State University</h1>
+                <br />
+                {this.state.loading &&
+                  <CircularProgress />
+                }
+                {!this.state.loading && this.state.event_status == "none" &&
+                  <h2>We don't have an event coming up soon! Signup for our mailing list, and we'll let you know.</h2>
+                }
 
-              {!this.state.loading && this.state.event_status == "upcoming" && (
-                <div>
-                  <h2>Join us at our next event: {this.state.current_event["Event Name"]}</h2><br />
-                  {this.state.countdown != false &&
-                    <h2>{this.state.countdown}</h2>
-                  }
-                  <br />
-                  <a onClick={() => this.rsvp(this.state.current_event['ID'])}>
-                    <Button theme={"blue"}>RSVP for this event!</Button>
-                  </a>
-                </div>
-              )}
-
-              {!this.state.loading && this.state.event_status == "ongoing" && (
-                <div>
-                  <h2>{this.state.current_event["Event Name"]} is happening right now!</h2>
-                  <br />
-                  <br />
+                {!this.state.loading && this.state.event_status == "upcoming" && (
                   <div>
-                    {this.state.current_event["Livestream URL"] != "FALSE" &&
-                      <a target="_blank" href={this.state.current_event["Livestream URL"]}><Button theme={"blue"}>Watch the livestream!</Button></a>
+                    <h2>Join us at our next event: {this.state.current_event["Event Name"]}</h2><br />
+                    {this.state.countdown != false &&
+                      <h2>{this.state.countdown}</h2>
                     }
+                    <br />
+                    <a onClick={() => this.rsvp(this.state.current_event['ID'])}>
+                      <Button theme={"blue"}>RSVP for this event!</Button>
+                    </a>
                   </div>
-                </div>
-              )}
+                )}
+
+                {!this.state.loading && this.state.event_status == "ongoing" && (
+                  <div>
+                    <h2>{this.state.current_event["Event Name"]} is happening right now!</h2>
+                    <br />
+                    <br />
+                    <div>
+                      {this.state.current_event["Livestream URL"] != "FALSE" &&
+                        <a target="_blank" href={this.state.current_event["Livestream URL"]}><Button theme={"blue"}>Watch the livestream!</Button></a>
+                      }
+                    </div>
+                  </div>
+                )}
 
 
-              <br />
-              {/*
+                <br />
+                {/*
               <form id="email_subscribe" onSubmit={this.handleFormSubmit}>
                 <div className={"signup_for_updates"}>
                   <div className={"asuemail"}>
@@ -288,7 +293,8 @@ export default class Home extends React.Component {
                 </div>
               </form>
               */}
-            </center>
+              </center>
+            </div>
           </div>
 
           <div className={"main_container"}>

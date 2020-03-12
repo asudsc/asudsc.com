@@ -9,12 +9,16 @@
     height: 1px;
 }
 
+.intro_wrapper {
+    padding-top: 80px;
+}
+
 .intro {
     overflow: hidden;
-    background: linear-gradient(45deg, #112332, #07253e);;
+    
     color: #fff;
     padding: 30px;
-    padding-top: 100px;
+    background: linear-gradient(45deg, #112332, #07253e);
     position: relative;
 
     .title {
