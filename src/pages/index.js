@@ -30,12 +30,30 @@ import EventsController from "../controllers/events";
 import Swal from 'sweetalert2';
 import SolutionChallenge from '../components/partials/solution_challenge.js';
 import Coronavirus from "../components/partials/Coronavirus";
+import dsclogo from "../images/dsclogo.svg";
 
 require('moment-countdown');
 
 const AB = styled(AppBar)({
   width: '90%'
 });
+
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <Typography
+      component="div"
+      role="tabpanel"
+      hidden={value !== index}
+      id={`full-width-tabpanel-${index}`}
+      aria-labelledby={`full-width-tabpanel-${index}`}
+      {...other}
+    >
+      {value === index && <Box pt={5}>{children}</Box>}
+    </Typography>
+  );
+}
 
 
 export default class Home extends React.Component {
@@ -63,6 +81,8 @@ export default class Home extends React.Component {
     }
     this.getEvents();
   }
+
+
 
   getEvents() {
     // Get the next event
@@ -223,13 +243,14 @@ export default class Home extends React.Component {
   render() {
     return (
       <div>
-        <Header title={"Developer Student Club – Arizona State University"}>
+        <Header title={"Developer Student Club – Arizona State University"} tabProps={this.tabProps}>
           <div className={"intro_wrapper"}>
             <center>
               <Coronavirus />
             </center>
             <div className={"intro"}>
               <center>
+                <img src={dsclogo} className={"dsclogo"} />
                 <h1 className={"title"}>Developer Student Club at Arizona State University</h1>
                 <br />
                 {this.state.loading &&
@@ -267,32 +288,7 @@ export default class Home extends React.Component {
 
 
                 <br />
-                {/*
-              <form id="email_subscribe" onSubmit={this.handleFormSubmit}>
-                <div className={"signup_for_updates"}>
-                  <div className={"asuemail"}>
-                    <ASUEmail
-                      ref={this.emailInput}
-                      email={(email) => {
-                        this.setState({
-                          email
-                        })
-                      }}
-                      valid={(emailValid) => {
-                        this.setState({
-                          emailValid
-                        })
-                      }}
-                    />
-                  </div>
-                  <div className={"button"}>
-                    <Button theme={"blue"} onClick={this.validateEmail}>Signup for Updates</Button>
-                  </div>
-                  <br />
-                  <br />
-                </div>
-              </form>
-              */}
+
               </center>
             </div>
           </div>
@@ -335,7 +331,7 @@ export default class Home extends React.Component {
                       <Box
                         mt={this.state.responsive ? 3 : 0}
                       >
-                        <Button theme={"blue_solid"} onClick={this.joinSlack}><FaSlackHash />&nbsp;&nbsp;Join the Slack Workspace</Button>
+                        <Button theme={"blue_solid"} onClick={this.joinSlack}><FaSlackHash />&nbsp;&nbsp;Join the Slack</Button>
                       </Box>
                     </Grid>
 
@@ -378,83 +374,14 @@ export default class Home extends React.Component {
             <Signup handleFormSubmit={this.handleFormSubmit} validateEmail={this.validateEmail} />
 
             <SolutionChallenge />
-
+            {/*<Events />*/}
             {/* Meeting */}
             {/* <Meetings /> */}
-            <Events />
             {/* Core Team Hiring */}
             {/* <CoreTeamHiring />*/}
 
             {/* Members */}
-            <Members />
-            {/*<div className={"box"}>
-              <Box pt={7}>
-                <center>
-                  <h1 className={"title"}>Meet the Core Team</h1>
-                  <div className={"members"}>
-                    {members.map((member) => (
-                      <div className={"member"}>
-                        <div className={"member_img"}>
-                          <img src={member.image}></img>
-                        </div>
-                        <div className={"member_name"}>
-                          {member.website &&
-                            <a href={member.website}><span>{member.name}</span></a>
-                          }
-                          {!member.website &&
-                            <span>{member.name}</span>
-                          }
-                        </div>
-                        <div className={"member_position"}>
-                          {member.position}
-                        </div>
-                        <div className={"member_email"}>
-                          {member.email}
-                        </div>
-                        <div className={"member_socials"}>
-                          {member.github &&
-                            <div className={"social_icon"}>
-                              <a href={member.github} target="_blank">
-                                <FaGithub size={30} />
-                              </a>
-                            </div>
-                          }
-                          {member.linkedin &&
-                            <div className={"social_icon"}>
-                              <a href={member.linkedin} target="_blank">
-                                <FaLinkedinIn size={30} />
-                              </a>
-                            </div>
-                          }
-                          {member.facebook &&
-                            <div className={"social_icon"}>
-                              <a href={member.facebook} target="_blank">
-                                <FaFacebookF size={30} />
-                              </a>
-                            </div>
-                          }
-                          {member.twitter &&
-                            <div className={"social_icon"}>
-                              <a href={member.twitter}>
-                                <FaTwitter size={30} />
-                              </a>
-                            </div>
-                          }
-                          {member.instagram &&
-                            <div className={"social_icon"}>
-                              <a href={member.instagram} target="_blank">
-                                <FaInstagram size={30} />
-                              </a>
-                            </div>
-                          }
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </center>
-              </Box>
-            </div>*/}
-
+            {/* <Members /> */}
           </div>
         </Header>
       </div>

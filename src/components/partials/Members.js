@@ -1,5 +1,6 @@
 import React from 'react';
 import members from "../../models/members";
+import "../../styles/home.scss";
 import { Box } from "@material-ui/core";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
@@ -7,9 +8,8 @@ export default class Members extends React.Component {
     render() {
         return (
             <div className={"box"}>
-              <Box pt={7}>
+              <Box pt={1}>
                 <center>
-                  <h1 className={"title"}>Meet the Core Team</h1>
                   <div className={"members"}>
                     {members.map((member) => (
                       <div className={"member"}>
