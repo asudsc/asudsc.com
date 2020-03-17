@@ -39,6 +39,16 @@ let members = [
         "linkedin": "https://www.linkedin.com/in/rahulrajan-karthikeyan-105548155/"
     },
     {
+        "name": "Devyash Lodha",
+        "image": steve,
+        "position": "Treasurer",
+        "email": "dlodha@asu.edu",
+        "linkedin": "https://www.linkedin.com/in/yash101/",
+        "github": "https://github.com/yash101",
+        "website": "https://www.devyashis.me/",
+        "instagram": "https://instagram.com/therealyash101"
+    },
+    {
         "name": "Amitabh Das",
         "image": amitab,
         "position": "Web Developer and Instructional Aide",
@@ -72,13 +82,6 @@ let members = [
         "github": "https://github.com/mohantysabyasachi27",
         "instagram": "https://instagram.com/ha8breeder",
         "linkedin": "https://www.linkedin.com/in/mohantysabyasachi27"
-    },
-    {
-        "name": "Devyash Lodha",
-        "image": steve,
-        "position": "Treasurer",
-        "email": "dlodha@asu.edu",
-        "linkedin": "https://www.linkedin.com/in/yash101/"
     },
     {
         "name": "Carly Cordero",
