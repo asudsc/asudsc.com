@@ -1,5 +1,5 @@
 let ananay = require('../images/members/ananay.jpg');
-let andrew =  require('../images/members/andrew_swag.png');
+let andrew =  require('../images/members/andrew.jpg');
 let rahul =  require('../images/members/rahul.png');
 let amitab = require('../images/members/amitab.jpg');
 let uday = require('../images/members/uday.jpg');
