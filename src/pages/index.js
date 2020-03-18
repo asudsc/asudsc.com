@@ -283,6 +283,11 @@ export default class Home extends React.Component {
                         <a target="_blank" href={this.state.current_event["Livestream URL"]}><Button theme={"blue"}>Watch the livestream!</Button></a>
                       }
                     </div>
+                    <br />
+                    <br />
+                    {this.state.current_event["QNA URL"] != "FALSE" &&
+                      <a target="_blank" href={this.state.current_event["QNA URL"]}><Button theme={"blue"}>Q & A</Button></a>
+                    }
                   </div>
                 )}
 
