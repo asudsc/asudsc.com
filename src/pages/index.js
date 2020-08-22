@@ -375,7 +375,7 @@ export default class Home extends React.Component {
               </center>
             </div>
 
-            <Signup handleFormSubmit={this.handleFormSubmit} validateEmail={this.validateEmail} />
+            {/*<Signup handleFormSubmit={this.handleFormSubmit} validateEmail={this.validateEmail} /> */}
             {/* 
               <SolutionChallenge />
             */}
