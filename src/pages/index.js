@@ -1,7 +1,7 @@
 import React from "react"
 import bg from "../images/bg.png";
 import logo from "../images/logo.jpg";
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaChevronDown, FaCalendar, FaClock, FaLocationArrow, FaSlackHash, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaChevronDown, FaCalendar, FaClock, FaLocationArrow, FaDiscord, FaGithub, FaLinkedin } from "react-icons/fa";
 import Header from "../components/header";
 import intro_image from "../images/intro_3.jpg";
 import { Grid, AppBar, Tab, Tabs, styled, Typography, Box, CircularProgress } from '@material-ui/core';
@@ -126,8 +126,8 @@ export default class Home extends React.Component {
     window.open("https://www.youtube.com/watch?v=aMvzFi4EX2c");
   }
 
-  joinSlack() {
-    window.open("https://asudsc.slack.com/");
+  joinDiscord() {
+    window.open("https://discord.gg/uDnXrbh");
   }
 
   joinSunDevilSync() {
@@ -246,7 +246,7 @@ export default class Home extends React.Component {
         <Header title={"Developer Student Club – Arizona State University"} tabProps={this.tabProps}>
           <div className={"intro_wrapper"}>
             <center>
-              <Coronavirus />
+              {/*<Coronavirus />*/}
             </center>
             <div className={"intro"}>
               <center>
@@ -254,7 +254,7 @@ export default class Home extends React.Component {
                 <h1 className={"title"}>Developer Student Club at Arizona State University</h1>
                 <br />
                 {this.state.loading &&
-                  <CircularProgress />
+                  <div></div>
                 }
                 {!this.state.loading && this.state.event_status == "none" &&
                   <h2>We don't have an event coming up soon! Signup for our mailing list, and we'll let you know.</h2>
@@ -320,12 +320,14 @@ export default class Home extends React.Component {
                     alignItems={"center"}
                     container
                   >
+                  {/*
                     <Grid xs={this.state.responsive ? 12 : 3}>
-                      <Button theme={"blue_solid"} onClick={this.watchInfoSession}>
-                        <FiPlayCircle />&nbsp;&nbsp;
-                        Watch the Info Session
-                      </Button>
+                    <Button theme={"blue_solid"} onClick={this.watchInfoSession}>
+                    <FiPlayCircle />&nbsp;&nbsp;
+                    Watch the Info Session
+                    </Button>
                     </Grid>
+                  */}
                     <Grid
                       xs={this.state.responsive ? 12 : 3}
                       mt={this.state.responsive ? 3 : 0}
@@ -333,14 +335,14 @@ export default class Home extends React.Component {
                       <Box
                         mt={this.state.responsive ? 3 : 0}
                       >
-                        <Button theme={"blue_solid"} onClick={this.joinSlack}><FaSlackHash />&nbsp;&nbsp;Join the Slack</Button>
+                        <Button theme={"blue_solid"} onClick={this.joinDiscord}><FaDiscord />&nbsp;&nbsp;Join the Discord</Button>
                       </Box>
                     </Grid>
 
                   </Grid>
                   <br />
                   <br />
-                  <p>All our communication is over Slack, join the Slack today!</p>
+                  <p>All our communication is over Discord, join the Discord today!</p>
                   <br />
                   {/* Social media buttons */}
                   <Grid
@@ -374,8 +376,9 @@ export default class Home extends React.Component {
             </div>
 
             <Signup handleFormSubmit={this.handleFormSubmit} validateEmail={this.validateEmail} />
-
-            <SolutionChallenge />
+            {/* 
+              <SolutionChallenge />
+            */}
             {/*<Events />*/}
             {/* Meeting */}
             {/* <Meetings /> */}

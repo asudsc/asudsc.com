@@ -119,7 +119,7 @@ export default class Header extends React.Component {
                         indicatorColor="primary"
                     >
                         <Tab label="Home" {...this.tabProps(0)} />
-                        <Tab label="Events"  {...this.tabProps(1)} />
+                        {/*<Tab label="Events"  {...this.tabProps(1)} />*/}
                         <Tab label="Core Team"  {...this.tabProps(3)} />
                     </Tabs>
                 </AppBar>
@@ -128,17 +128,17 @@ export default class Header extends React.Component {
                         {this.props.children}
                     </div>
                 </TabPanel>
-                <TabPanel value={this.state.index} index={1} dir={'ltr'}>
+                {/*<TabPanel value={this.state.index} index={1} dir={'ltr'}>
                     <div className={"content"}>
                         <EventsPage />
                     </div>
-                </TabPanel>
+                </TabPanel>*/}
                 {/*<TabPanel value={this.state.index} index={2} dir={'ltr'}>
                     <div className={"content"}>
                         <AboutPage />
                     </div>
                 </TabPanel>*/}
-                <TabPanel value={this.state.index} index={2} dir={'ltr'}>
+                <TabPanel value={this.state.index} index={1} dir={'ltr'}>
                     <div className={"content"}>
                         <CoreTeamPage />
                     </div>

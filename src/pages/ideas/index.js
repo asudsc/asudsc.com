@@ -6,7 +6,7 @@ export default class Ideas extends React.Component {
     }
 
     componentDidMount() {
-        window.location.href = "https://docs.google.com/document/d/1HV6PmQdfUS4Q7l43qhIcx8rFLz2mA7JpoW3B_SjK3ws/edit#";
+	window.location.href = 'https://docs.google.com/spreadsheets/d/1jbEze7puAy4DOkSflkrjy-z9tROmw2rlJ-beidxXscM/edit#gid=0';
     }
 
     render() {

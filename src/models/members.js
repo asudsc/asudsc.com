@@ -30,65 +30,6 @@ let members = [
         "twitter": "https://twitter.com/andrewhillpdx",
         "instagram": "https://instagram.com/andrew_h__",
         "linkedin": "https://www.linkedin.com/in/andrew--hill"
-    },
-    {
-        "name": "Rahulrajan Kartikeyan",
-        "image": rahul,
-        "position": "Vice President",
-        "email": "rahul@asudsc.com",
-        "linkedin": "https://www.linkedin.com/in/rahulrajan-karthikeyan-105548155/"
-    },
-    {
-        "name": "Devyash Lodha",
-        "image": steve,
-        "position": "Treasurer",
-        "email": "dlodha@asu.edu",
-        "linkedin": "https://www.linkedin.com/in/yash101/",
-        "github": "https://github.com/yash101",
-        "website": "https://www.devyashis.me/",
-        "instagram": "https://instagram.com/therealyash101"
-    },
-    {
-        "name": "Amitabh Das",
-        "image": amitab,
-        "position": "Web Developer and Instructional Aide",
-        "email": "adas59@asu.edu",
-        "github": "https://github.com/amitab",
-        "linkedin": "https://linkedin.com/in/amitab",
-    },
-    {
-        "name": "James Willman",
-        "image": james,
-        "position": "Event Coordinator",
-        "email": "jwillma1@asu.edu",
-        "twitter": "https://twitter.com/imjameswillman",
-        "instagram": "https://www.instagram.com/imjameswillman/",
-        "linkedin": "https://www.linkedin.com/in/jameswillman/s"
-    },
-    {
-        "name": "Uday PB",
-        "image": uday,
-        "position": "Web Developer and Instructional Aide",
-        "email": "uday.pb26@gmail.com",
-        "website": "",
-        "github": "https://github.com/udaypb",
-        "linkedin": "https://www.linkedin.com/in/udaypb"
-    },
-    {
-        "name": "Sabyasachi Mohanty",
-        "image": sabya,
-        "position": "Web Developer and Instructional Aide",
-        "email": "smohan31@asu.edu",
-        "github": "https://github.com/mohantysabyasachi27",
-        "instagram": "https://instagram.com/ha8breeder",
-        "linkedin": "https://www.linkedin.com/in/mohantysabyasachi27"
-    },
-    {
-        "name": "Carly Cordero",
-        "image": carly,
-        "position": "Photographer",
-        "email": "cpcordero@asu.edu",
-        "linkedin": "https://www.linkedin.com/in/carlycordero/"
     }
 ]
 
