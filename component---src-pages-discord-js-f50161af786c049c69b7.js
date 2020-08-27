@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{292:function(n,e,t){"use strict";t.r(e),t.d(e,"default",(function(){return d}));var i=t(1),o=t.n(i);function d(n){return"undefined"!=typeof window&&(window.location.href="https://discord.com/invite/uDnXrbh"),o.a.createElement("div",null)}}}]);
+//# sourceMappingURL=component---src-pages-discord-js-f50161af786c049c69b7.js.map
