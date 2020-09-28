@@ -267,6 +267,8 @@ export default class Home extends React.Component {
                 {!this.state.loading && this.state.event_status == "upcoming" && (
                   <div>
                     <h2>{this.state.current_event["Event Name"]}</h2><br />
+                    <h3>{this.state.current_event["Date Time"]}</h3>
+                    <br />
                     {this.state.countdown != false &&
                       <h2>{this.state.countdown}</h2>
                     }
