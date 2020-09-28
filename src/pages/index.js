@@ -240,6 +240,10 @@ export default class Home extends React.Component {
     });
   }
 
+  openRSVPLink() {
+    window.location.href = this.state.current_event.rsvp_link;
+  }
+
   render() {
     return (
       <div>
@@ -262,12 +266,12 @@ export default class Home extends React.Component {
 
                 {!this.state.loading && this.state.event_status == "upcoming" && (
                   <div>
-                    <h2>Join us at our next event: {this.state.current_event["Event Name"]}</h2><br />
+                    <h2>{this.state.current_event["Event Name"]}</h2><br />
                     {this.state.countdown != false &&
                       <h2>{this.state.countdown}</h2>
                     }
                     <br />
-                    <a onClick={() => this.rsvp(this.state.current_event['ID'])}>
+                    <a onClick={() => this.openRSVPLink()}>
                       <Button theme={"blue"}>RSVP for this event!</Button>
                     </a>
                   </div>

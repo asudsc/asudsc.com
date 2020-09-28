@@ -4,14 +4,16 @@
 
 const axios = require('axios');
 const config = require('../../config');
+const events = require('../models/events.js');
 
 const getEvents = () => {
     return new Promise((resolve, reject) => {
-        axios.get(config.events_api + "/getEvents").then((res) => {
-            resolve(res.data.events);
-        }).catch((err) => {
-            reject(err);
-        });
+        // axios.get(config.events_api + "/getEvents").then((res) => {
+        //     resolve(res.data.events);
+        // }).catch((err) => {
+        //     reject(err);
+        // });
+        resolve(events);
     });
 }
 
