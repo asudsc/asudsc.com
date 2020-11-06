@@ -3,6 +3,8 @@ let andrew =  require('../images/members/andrew.jpg')
 let rohit = require('../images/members/rohit.jpg')
 let zach = require('../images/members/zach.jpg')
 let sourish = require('../images/members/sourish.png')
+let morgan = require('../images/members/morgan.png')
+let ninad = require('../images/members/ninad.jpg')
 
 let members = [
     {
@@ -49,6 +51,24 @@ let members = [
         "image": sourish,
         "position": "Teaching Assistant",
         "email": "vmurthy2@asu.edu"
+    },
+    {
+        "name": "Morgan Cividanes",
+        "image": morgan,
+        "position": "Web Developer",
+        "email": "mcividan@asu.edu",
+        "github": "https://github.com/skelekat404",
+        "linkedin": "https://www.linkedin.com/in/morgan-cividanes-9a83651a8/",
+        "instagram": "https://www.instagram.com/morgan.c1vidanes/"
+    },
+    {
+        "name": "Ninad Kulkarni",
+        "image": ninad,
+        "position": "Web Developer",
+        "email": "nkulka12@asu.edu",
+        "github": "https://github.com/ninkuk",
+        "linkedin": "https://www.linkedin.com/in/ninad-kulkarni-2001/",
+        "instagram": "https://www.instagram.com/ninkuk/"
     }
 ]
 
