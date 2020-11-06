@@ -2,13 +2,8 @@ let ananay = require('../images/members/ananay.jpg');
 let andrew =  require('../images/members/andrew.jpg');
 let rohit = require('../images/members/rohit.jpg')
 let zach = require('../images/members/zach.jpg')
-let rahul =  require('../images/members/rahul.png');
-let amitab = require('../images/members/amitab.jpg');
-let uday = require('../images/members/uday.jpg');
-let steve = require('../images/members/steve.jpg');
-let james = require('../images/members/james.jpg');
-let carly = require('../images/members/carly.jpg');
-let sabya = require('../images/members/sabya.jpg')
+let morgan = require('../images/members/morgan.png')
+
 
 let members = [
     {
@@ -49,6 +44,15 @@ let members = [
         "github": "https://github.com/zachchan105",
         "linkedin": "https://www.linkedin.com/in/zach-price-472109170/",
         "instagram": "https://www.instagram.com/zachprice105/"
+    },
+    {
+        "name": "Morgan Cividanes",
+        "image": morgan,
+        "position": "Web Developer",
+        "email": "mcividan@asu.edu",
+        "github": "https://github.com/skelekat404",
+        "linkedin": "https://www.linkedin.com/in/morgan-cividanes-9a83651a8/",
+        "instagram": "https://www.instagram.com/morgan.c1vidanes/"
     }
 ]
 
