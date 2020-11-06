@@ -1,14 +1,8 @@
-let ananay = require('../images/members/ananay.jpg');
-let andrew =  require('../images/members/andrew.jpg');
+let ananay = require('../images/members/ananay.jpg')
+let andrew =  require('../images/members/andrew.jpg')
 let rohit = require('../images/members/rohit.jpg')
 let zach = require('../images/members/zach.jpg')
-let rahul =  require('../images/members/rahul.png');
-let amitab = require('../images/members/amitab.jpg');
-let uday = require('../images/members/uday.jpg');
-let steve = require('../images/members/steve.jpg');
-let james = require('../images/members/james.jpg');
-let carly = require('../images/members/carly.jpg');
-let sabya = require('../images/members/sabya.jpg')
+let sourish = require('../images/members/sourish.png')
 
 let members = [
     {
@@ -49,6 +43,12 @@ let members = [
         "github": "https://github.com/zachchan105",
         "linkedin": "https://www.linkedin.com/in/zach-price-472109170/",
         "instagram": "https://www.instagram.com/zachprice105/"
+    },
+    {
+        "name": "Sourish",
+        "image": sourish,
+        "position": "Teaching Assistant",
+        "email": "vmurthy2@asu.edu"
     }
 ]
 
