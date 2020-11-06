@@ -6,6 +6,7 @@ let sourish = require('../images/members/sourish.png')
 let morgan = require('../images/members/morgan.png')
 let ninad = require('../images/members/ninad.jpg')
 let nina = require('../images/members/nina.jpg')
+let herlina = require('../images/members/herlina.jpg')
 
 let members = [
     {
@@ -79,6 +80,13 @@ let members = [
         "email": "ndagaev@asu.edu",
         "linkedin": "https://www.linkedin.com/in/nina-dagaev-ba9284172/",
         "instagram": "https://www.instagram.com/ninadagaev/"
+    },
+    {
+        "name": "Herlina Widodo",
+        "image": herlina,
+        "position": "Teaching Assistant",
+        "email": "hwidodo@asu.edu",
+        "linkedin": "https://www.linkedin.com/in/herlina-widodo/"
     }
 ]
 
