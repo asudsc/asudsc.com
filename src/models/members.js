@@ -50,7 +50,8 @@ let members = [
         "name": "Sourish",
         "image": sourish,
         "position": "Teaching Assistant",
-        "email": "vmurthy2@asu.edu"
+        "email": "vmurthy2@asu.edu",
+        "linkedin": "https://www.linkedin.com/in/sourishmurthy/"
     },
     {
         "name": "Morgan Cividanes",
