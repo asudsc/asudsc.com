@@ -5,6 +5,7 @@ let zach = require('../images/members/zach.jpg')
 let sourish = require('../images/members/sourish.png')
 let morgan = require('../images/members/morgan.png')
 let ninad = require('../images/members/ninad.jpg')
+let nina = require('../images/members/nina.jpg')
 
 let members = [
     {
@@ -70,6 +71,14 @@ let members = [
         "github": "https://github.com/ninkuk",
         "linkedin": "https://www.linkedin.com/in/ninad-kulkarni-2001/",
         "instagram": "https://www.instagram.com/ninkuk/"
+    },
+    {
+        "name": "Nina Dagaev",
+        "image": nina,
+        "position": "Social Media Content Director",
+        "email": "ndagaev@asu.edu",
+        "linkedin": "https://www.linkedin.com/in/nina-dagaev-ba9284172/",
+        "instagram": "https://www.instagram.com/ninadagaev/"
     }
 ]
 
