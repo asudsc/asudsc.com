@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{229:function(e,n,t){"use strict";t.r(n),t.d(n,"default",(function(){return s}));var i=t(0),o=t.n(i);function s(e){return"undefined"!=typeof window&&(window.location.href="https://dsc.community.dev/events/details/developer-student-clubs-arizona-state-university-presents-solutions-challenge-kickoff-arizona-state-university/"),o.a.createElement("div",null)}}}]);
+//# sourceMappingURL=component---src-pages-challenge-js-f618e27b265099f3e1cf.js.map
