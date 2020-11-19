@@ -13,6 +13,7 @@ import { Grid, AppBar, Tab, Tabs, styled, Typography, Box, CircularProgress } fr
 import EventsPage from "../components/pages/EventsPage";
 import AboutPage from "../components/pages/AboutPage";
 import CoreTeamPage from "../components/pages/CoreTeamPage";
+import SolutionChallenge from '../pages/solution-challenge';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -120,7 +121,8 @@ export default class Header extends React.Component {
                     >
                         <Tab label="Home" {...this.tabProps(0)} />
                         {/*<Tab label="Events"  {...this.tabProps(1)} />*/}
-                        <Tab label="Core Team"  {...this.tabProps(3)} />
+                        <Tab label="Core Team"  {...this.tabProps(1)} />
+                        <Tab label="Solution Challenge"  {...this.tabProps(2)} />
                     </Tabs>
                 </AppBar>
                 <TabPanel value={this.state.index} index={0} dir={'ltr'}>
@@ -141,6 +143,11 @@ export default class Header extends React.Component {
                 <TabPanel value={this.state.index} index={1} dir={'ltr'}>
                     <div className={"content"}>
                         <CoreTeamPage />
+                    </div>
+                </TabPanel>
+                <TabPanel value={this.state.index} index={2} dir={'ltr'}>
+                    <div className={"content"}>
+                        <SolutionChallenge />
                     </div>
                 </TabPanel>
                 <div className={"footer"}>

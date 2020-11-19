@@ -218,6 +218,49 @@
     padding: 30px;
 }
 
+.solution_challenge_card {
+    padding: 30px;
+    border: 5px solid rgba(0,0,0,0.08);
+    margin: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    .title {
+        color: rgb(41, 119, 245);
+        font-weight: 500;
+    }
+    .github_logo {
+        margin-top: 30px;
+        border-right: 3px solid rgba(0,0,0,0.08);
+        width: 50px;
+        display: inline-block;
+    }
+    .github_image {
+        width: 32px;
+        border: 1px solid rgba(0,0,0,0.3);
+        border-radius: 100%;
+    }
+    .project_member {
+        margin-left: 20px;
+        display: inline-block;
+    }
+    .project_badge_open {
+        border: 2px solid #1abc9c;
+        border-radius: 10px;
+        text-align: center;
+        width: 50px;
+        color: #1abc9c;
+        padding: 5px;
+    }
+    .project_badge_closed {
+        border: 2px solid #c0392b;
+        border-radius: 10px;
+        text-align: center;
+        color: #c0392b;
+        width: 50px;
+        padding: 7.5px;
+    }
+}
+
 // .members {
 //     margin-top: 75px;
 //     .member {
