@@ -32,17 +32,9 @@ let members = [
         "instagram": "https://instagram.com/ananayarora"
     },
     {
-        "name": "Rohit Singh",
-        "image": rohit,
-        "position": "Instructor & Board Executive",
-        "email": "rsingh92@asu.edu",
-        "linkedin": "https://www.linkedin.com/in/rohit94singh/",
-        "instagram": "https://www.instagram.com/rohksin/"
-    },
-    {
         "name": "Zach Price",
         "image": zach,
-        "position": "Social Media Manager",
+        "position": "Social Media Manager & Exec Board Member",
         "email": "ztprice@asu.edu",
         "github": "https://github.com/zachchan105",
         "linkedin": "https://www.linkedin.com/in/zach-price-472109170/",
